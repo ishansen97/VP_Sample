@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Flash</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../../../JQuery/jquery-1.4.2.min.js""></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+	
+</head>
+<body>
+
+<form onsubmit="VPFlashDialog.insert();return false;" action="#">
+	<table>
+		<tr>
+			<td>Flash Url:</td>
+			<td><input type="text" tabindex="1" id="txtUrl" /></td>
+		</tr>
+		<tr>
+			<td>Width:</td>
+			<td><input type="text" tabindex="2" id="txtWidth" /></td>
+		</tr>
+		<tr>
+			<td>Height: </td>
+			<td><input type="text" tabindex="3" id="txtHeight" /></td>
+		</tr>
+		<tr>
+			<td>Flash Vars:</td>
+			<td><input tabindex="4" type="text" id="txtVars" /></td>
+		</tr>
+	</table>
+	<ul class="errorPanel">
+	</ul>
+	
+	<div class="mceActionPanel newWindow">
+		<input type="button" id="insert" name="insert" tabindex="5" value="Save" onclick="VPFlashDialog.insert();" />
+		<input type="button" id="cancel" name="cancel" tabindex="6" value="Cancel" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+.ui-autocomplete { position: absolute; cursor: default; }	
+.ui-autocomplete-loading { background: white url('images/Progress.gif') right center no-repeat; }
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+ul.ui-autocomplete {
+list-style:none ;
+margin:0px;
+padding:0px;
+}
+
+ul.ui-autocomplete li
+{
+	
+}
+
+ul.ui-autocomplete li a
+{
+	display:block;
+	padding:3px 0px 3px 5px;
+	border:solid 1px #ffffff;
+	
+}
+
+
+*:first-child+html .ui-tabs 
+{
+	min-width:350px;
+}

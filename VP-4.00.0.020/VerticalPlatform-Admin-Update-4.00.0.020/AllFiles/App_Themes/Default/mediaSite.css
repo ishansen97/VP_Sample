@@ -1,0 +1,52 @@
+﻿.MediaSection {
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  max-width: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+.MediaSection .FileManagerPane {
+  border: none;
+}
+
+.BtnMediaTab {
+  border-radius: 4px 4px 0 0;
+  line-height: 20px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-right: 0px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border: 1px solid #dddddd;
+  border-bottom: none;
+  background-color: #fff;
+  font-size: 1.15em;
+  font-weight: normal;
+  background: url("Images/leftNavBg.png") repeat-x scroll 0 0 #efefef;
+}
+.MediaTabSelected {
+    font-weight: bold;
+    background: #fff;
+}
+.MediaTabDataTable {
+  margin-top: 20px;
+}
+.Breadcrumb {
+  display: block;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.04);
+  margin-bottom: 5px;
+  border-radius: 6px;
+}
+.Breadcrumb .YouAreAt { 
+  font-weight: bold;
+}
+.FieldLabel {
+    display: block;
+    margin-bottom: 10px;
+}
+.SearchInfo {
+    font-size: 0.8em;
+}

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentTypes>
+	<ContentType type="Product">
+		<AssociatedContentType type="File">
+			<Settings>
+				<Setting>
+					<DisplayName>Lead submit is required to download documents</DisplayName>
+					<Name>IsRequiredToSubmitLeadToDownload</Name>
+					<Control>DropDownList</Control>
+					<Values>
+						<Value>None</Value>
+						<Value>True</Value>
+						<Value>False</Value>
+					</Values>
+					<ValidatorName>Required</ValidatorName>
+				</Setting>
+			</Settings>
+		</AssociatedContentType>
+	</ContentType>
+	<ContentType type="Article">
+		<AssociatedContentType type="Category">
+			<Settings>
+				<Setting>
+					<DisplayName>Article section</DisplayName>
+					<Name>ArticleSectionId</Name>
+					<Control>DropDownList</Control>
+					<DataBoundMethod>GetArticleSections</DataBoundMethod>
+					<DataTextField>SectionTitle</DataTextField>
+					<DataValueField>Id</DataValueField>
+					<Values>
+						<Value></Value>
+					</Values>
+				</Setting>
+				<Setting>
+					<DisplayName>Make the Article the Default for the Category</DisplayName>
+					<Name>IsDefaultArticleForCategory</Name>
+					<Control>CheckBox</Control>
+					<Values>
+					</Values>
+					<BeforeSave>RemoveDefaultArticleSettingForTheCategory</BeforeSave>
+					<AfterSave></AfterSave>
+				</Setting>
+				<Setting>
+					<DisplayName>Override Details</DisplayName>
+					<Name>IsOverrideCategoryDetails</Name>
+					<Control>CheckBox</Control>
+					<Values>
+					</Values>
+				</Setting>
+				<Setting>
+					<DisplayName>Category Description</DisplayName>
+					<Name>CategoryDescription</Name>
+					<Control>TextArea</Control>
+					<Dependency>IsOverrideCategoryDetails</Dependency>
+					<DependencyValue>True</DependencyValue>
+					<DependencyType>Equal</DependencyType>
+					<Values>
+					</Values>
+					<ValidatorName>Required</ValidatorName>
+				</Setting>
+			</Settings>
+		</AssociatedContentType>
+	</ContentType>
+	<ContentType type="Article">
+		<AssociatedContentType type="Product">
+			<Settings>
+				<Setting>
+					<DisplayName>Article section</DisplayName>
+					<Name>ArticleSectionId</Name>
+					<Control>DropDownList</Control>
+					<DataBoundMethod>GetArticleSections</DataBoundMethod>
+					<DataTextField>SectionTitle</DataTextField>
+					<DataValueField>Id</DataValueField>
+					<Values>
+						<Value></Value>
+					</Values>
+				</Setting>
+				<Setting>
+					<DisplayName>Override product details</DisplayName>
+					<Name>IsOverrideProductDetails</Name>
+					<Control>CheckBox</Control>
+					<Values>
+					</Values>
+				</Setting>
+				<Setting>
+					<DisplayName>Image</DisplayName>
+					<Name>ProductImage</Name>
+					<Control>TextBox</Control>
+					<Dependency>IsOverrideProductDetails</Dependency>
+					<DependencyValue>True</DependencyValue>
+					<DependencyType>Equal</DependencyType>
+					<Values>
+					</Values>
+					<ValidatorName>Required</ValidatorName>
+				</Setting>
+				<Setting>
+					<DisplayName>Product title</DisplayName>
+					<Name>ProductTitle</Name>
+					<Control>TextBox</Control>
+					<Dependency>IsOverrideProductDetails</Dependency>
+					<DependencyValue>True</DependencyValue>
+					<DependencyType>Equal</DependencyType>
+					<Values>
+					</Values>
+					<ValidatorName>Required</ValidatorName>
+				</Setting>
+				<Setting>
+					<DisplayName>Product description</DisplayName>
+					<Name>ProductDescription</Name>
+					<Control>TextArea</Control>
+					<Dependency>IsOverrideProductDetails</Dependency>
+					<DependencyValue>True</DependencyValue>
+					<DependencyType>Equal</DependencyType>
+					<Values>
+					</Values>
+					<ValidatorName>Required</ValidatorName>
+				</Setting>
+			</Settings>
+		</AssociatedContentType>
+	</ContentType>
+</ContentTypes>

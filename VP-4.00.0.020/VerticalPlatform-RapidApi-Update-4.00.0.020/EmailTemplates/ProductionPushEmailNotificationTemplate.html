@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>  
+    
+</head>
+<body>
+    <div style="padding:10px; padding-left:0px;">
+        Hi There,
+    </div>
+    <!--<div style="padding: 10px; padding-top: 20px; padding-left:0px;">
+        Production push task(s) for <b>JOB ID - ##JobId##</b> (For vendor ##VendorName## / ID: ##VendorId##) has completed. Please refer <a href="##RapidAdminReportPageUrl##/ModuleAdmin/Rapid/Rapid.aspx">VP-ADMIN</a> for more details.
+    </div>-->
+
+    <div style="padding: 10px; padding-top: 20px; padding-left:0px; margin-bottom:25px;">
+        Production push task(s) for <b>JOB ID - ##JobId##</b> has completed. Please refer <a href="##RapidAdminReportPageUrl##/ModuleAdmin/Rapid/Rapid.aspx">VP-ADMIN</a> for more details.
+    </div>
+
+    <table style="border-collapse: collapse;">
+        <tr>
+            <td style="border: 1px solid black;padding: 5px; min-width:120px;">Job Id</td>
+            <td style="border: 1px solid black;padding: 5px; min-width:160px;">##JobId##</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;padding: 5px;">Vendor Id</td>
+            <td style="border: 1px solid black;padding: 5px;">##VendorId##</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;padding: 5px;">Vendor</td>
+            <td style="border: 1px solid black;padding: 5px;">##VendorName##</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;padding: 5px;">Action</td>
+            <td style="border: 1px solid black;padding: 5px;">Production push</td>
+        </tr>
+        ##DynamicTaskCountRows##             
+    </table>    
+
+    <div style="padding:10px; padding-top:30px; padding-left:0px;">
+        Thanks,<br />
+        Rapid Team.
+    </div>
+
+</body>
+</html>

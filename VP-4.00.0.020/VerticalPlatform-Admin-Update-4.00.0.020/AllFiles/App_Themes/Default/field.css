@@ -1,0 +1,47 @@
+﻿
+.customFieldDialog
+{
+	width:500px;
+}
+
+
+
+.fieldCol1
+{
+	float:left;
+	width:40%;
+}
+
+.fieldCol2
+{
+	float:left;
+	width:60%;
+}
+
+.required
+{
+	color: #FF0000;
+}
+
+.error
+{
+	color: #FF0000;
+}
+
+.upIcon
+{
+    background: url(Images/up-green.gif) no-repeat 0 0;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	cursor:pointer;	
+}
+
+.downIcon
+{
+    background: url(Images/down-green.gif) no-repeat 0 0;
+	display:inline-block;
+	width:16px;
+	height:16px;
+	cursor:pointer;	
+}

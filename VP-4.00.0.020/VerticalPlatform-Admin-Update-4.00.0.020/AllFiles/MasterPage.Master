@@ -1,0 +1,76 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs"
+	Inherits="VerticalPlatformAdminWeb.MasterPage" %>
+<!DOCTYPE html>
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Vertical Platform - Admin</title>
+<asp:Literal ID="ltlJavascripts" runat="server"></asp:Literal>
+</head>
+
+<body>
+<form id="form1" runat="server" autocomplete="false">
+	<asp:ScriptManager ID="scmScriptManager" runat="server">
+	</asp:ScriptManager>
+    <div id="Canvas" class="main-wrapper">
+        <div class="navbar navbar-fixed-top main-nav-bar">
+
+	        <div class="navbar-inner">
+    	        <div class="container-fluid">
+        	        <a href="~/Default.aspx" class="brand pull-right" runat="server"><img src="~/App_Themes/Default/Images/cn-logo.png" runat="server" ></a>
+                    <div class="brand logo">Vertical Platform <span>Admin</span></div>
+        	        <div class="nav-collapse">
+            	        <ul class="nav">
+                	        <li>
+                                <asp:HyperLink CssClass="site-name" ID="siteLink" runat="server" Target="_blank"></asp:HyperLink>
+                            </li>
+                            <li>
+                                <div class="change_site"><a href="javascript:;" class="change-site">Change Site</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             <div class="log-in-div container-fluid">
+                <div class="row-fluid">
+                    <div class="span12">
+						<span>Logged in as</span> <span class="user_name">
+							<asp:LoginName ID="LoginName1" runat="server" />
+						</span>
+						| <asp:HyperLink ID="ManageAccount" CssClass="logout_link" NavigateUrl="~/Platform/User/UserProfile.aspx" runat="server">Manage Account</asp:HyperLink> |
+						<asp:LoginStatus ID="LoginStatus1" CssClass="logout_link" runat="server" onloggedout="LoginStatus1_LoggedOut" />
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+  
+        <div class="container-fluid main-container clearfix">
+
+            <div class="main-left" id="leftSidebar" runat="server">
+                <div class="top-bar"></div>
+                <asp:Menu ID="mnuMain" runat="server" DataSourceID="SiteMapDataSource1" onmenuitemdatabound="mnuMain_MenuItemDataBound" EnableViewState="false">
+			    </asp:Menu>
+			    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="false" />
+            </div>
+
+            <div class="main-content">
+                <div class="top-bar"></div>
+                <div class="inner-content">
+                    <div id="contentPane" class="ContentPane clearfix" runat="server">
+						<div class="row-fluid" runat="server" id="divApplicationMessage" visible="false">
+							<asp:Literal runat="server" ID="ltlMessages"></asp:Literal>
+						</div>
+			            <asp:ContentPlaceHolder ID="cphContent" runat="server">
+				        </asp:ContentPlaceHolder>
+	                </div>
+                </div>
+            </div>
+        </div>
+        <div id="popupDialog" class="jqmWindowIframe">
+		    <iframe id="popupDialogIframe" src="" class="jqmContentIframe" frameborder="0" ALLOWTRANSPARENCY="true" scrolling="no" ></iframe>
+	    </div>
+     </div>
+</form>
+</body>
+</html>

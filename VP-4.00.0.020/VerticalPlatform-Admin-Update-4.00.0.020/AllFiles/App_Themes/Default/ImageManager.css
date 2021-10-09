@@ -1,0 +1,16 @@
+﻿.imageEditor{border:solid 1px #dddddd; background:#eeeeee; padding:20px;width:835px;}
+.imageEditor .editArea{margin-top:10px;}
+.imageEditor .editArea .editCanvasOuter,.imageEditor .editArea .editedCanvasOuter{background:#ffffff; border:solid 1px #dddddd;width:410px;float:left;}
+.imageEditor .editArea .editedCanvasOuter{float:right; margin-left:10px;}
+.imageEditor .editArea .editCanvasOuter .editCanvas, .imageEditor .editArea .editedCanvasOuter .editedCanvas{height:300px; margin:5px; overflow:auto;}
+.imageEditor .imageListingOuter{margin-top:10px; background:#ffffff; border:solid 1px #dddddd; padding:10px 25px 10px 30px; position:relative;}
+.imageEditor .imageListing img{display:inline-block; width:132px; height:132px; margin-right:10px;cursor:pointer; padding:5px; border:solid 1px #eeeeee;}
+.imageEditor .imageListingOuter .caroufredsel_wrapper{margin:0px auto !important;}
+.imageEditor .imageListingOuter .prev, .imageEditor .imageListingOuter .next{position:absolute; top:57px;width:21px; height:41px; display:block;opacity:0.8; filter:Alpha(opacity=80);}
+.imageEditor .imageListingOuter .prev{left:7px; background:url(Images/image-slider-prev.png) no-repeat;}
+.imageEditor .imageListingOuter .next{right:7px; background:url(Images/image-slider-next.png) no-repeat;}
+.imageEditor .imageListingOuter .prev.disabled, .imageEditor .imageListingOuter .next.disabled{opacity:0.3; filter:Alpha(opacity=30); cursor:default;}
+.imageEditor .imageManagerButtons{border:solid 1px #dddddd; padding:20px; background:rgba(255,255,255,0.4); padding:10px;}
+.imageEditor .imageManagerButtons div{display:inline-block; padding-right:20px; margin-right:20px; border-right:solid 1px #dddddd;}
+.imageEditor .imageManagerButtons div.last{margin-right:0px; padding-right:0px; border:none;}
+.imageEditor .imageManagerButtonsFixed{position:fixed; width:813px; top:86px; background:#F4F4F4; box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.3); z-index:1010;}

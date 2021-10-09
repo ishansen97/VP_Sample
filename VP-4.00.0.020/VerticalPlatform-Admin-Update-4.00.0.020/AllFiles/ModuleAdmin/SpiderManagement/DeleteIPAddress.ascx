@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="DeleteIPAddress.ascx.cs" Inherits="VerticalPlatformAdminWeb.ModuleAdmin.SpiderManagement.DeleteIPAddress" %>
+	<span>Are you sure to delete  IP address '<%=IPAddress %>'</span>

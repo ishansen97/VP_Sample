@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Site>
+	<Pages>
+		
+		<Page>
+			<SiteHomePage>True</SiteHomePage>
+			<Name>Home</Name>
+			<Title>Home</Title>
+			<KeyWords></KeyWords>
+			<Template>~/Templates/TwoColumnLayout/TwoColumnLayout.ascx</Template>
+			<SortOrder>1</SortOrder>
+			<Navigable>True</Navigable>
+			<Hidden>False</Hidden>
+			<LogInToView>False</LogInToView>
+			<IncludeInSitemap>False</IncludeInSitemap>
+			<ModuleInstances>
+				<ModuleInstance>
+					<ModuleUserControl>~/Containers/PrimaryContainer/PrimaryContainer.ascx</ModuleUserControl>
+					<Pane>contentPane</Pane>
+					<SortOrder>1</SortOrder>
+					<ModuleInstances>
+						<ModuleInstance>
+							<ModuleUserControl>~/Modules/StaticHtml/StaticHtml.ascx</ModuleUserControl>
+							<Title>Exhibition</Title>
+							<SortOrder>1</SortOrder>
+						</ModuleInstance>
+					</ModuleInstances>
+				</ModuleInstance>
+			</ModuleInstances>
+		</Page>
+
+		<Page>
+			<Name>Exhibition</Name>
+			<Title>Exhibition</Title>
+			<KeyWords></KeyWords>
+			<Template>~/Templates/TwoColumnLayout/TwoColumnLayout.ascx</Template>
+			<SortOrder>2</SortOrder>
+			<Navigable>False</Navigable>
+			<Hidden>True</Hidden>
+			<LogInToView>False</LogInToView>
+			<IncludeInSitemap>False</IncludeInSitemap>
+			<ModuleInstances>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Exhibition/ExhibitionHeader.ascx</ModuleUserControl>
+					<Title>Exhibition Header</Title>
+					<Pane>pageHeader</Pane>
+					<SortOrder>1</SortOrder>
+				</ModuleInstance>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Exhibition/ExhibitionShowSpecials.ascx</ModuleUserControl>
+					<Title>Exhibition Show Specials</Title>
+					<Pane>pageHeader</Pane>
+					<SortOrder>2</SortOrder>
+				</ModuleInstance>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Exhibition/ExhibitionCategoryList.ascx</ModuleUserControl>
+					<Title>Exhibition Category List</Title>
+					<Pane>leftSidebar</Pane>
+					<SortOrder>1</SortOrder>
+				</ModuleInstance>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Article/ArticleDetail.ascx</ModuleUserControl>
+					<Title>Article Detail</Title>
+					<Container></Container>
+					<Pane>contentPane</Pane>
+					<SortOrder>1</SortOrder>
+					<ModuleInstanceSettings>
+						<ModuleInstanceSetting>
+							<Name>ArticleDetailShowUnpublishedArticles</Name>
+							<Value>True</Value>
+						</ModuleInstanceSetting>
+					</ModuleInstanceSettings>
+				</ModuleInstance>
+
+			</ModuleInstances>
+		</Page>
+
+		<Page>
+			<Name>ExhibitionCategory</Name>
+			<Title>Exhibition Category</Title>
+			<KeyWords></KeyWords>
+			<Template>~/Templates/TwoColumnLayout/TwoColumnLayout.ascx</Template>
+			<SortOrder>3</SortOrder>
+			<Navigable>False</Navigable>
+			<Hidden>True</Hidden>
+			<LogInToView>False</LogInToView>
+			<IncludeInSitemap>False</IncludeInSitemap>
+			<ModuleInstances>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Exhibition/ExhibitionHeader.ascx</ModuleUserControl>
+					<Title>Exhibition Header</Title>
+					<Pane>pageHeader</Pane>
+					<SortOrder>1</SortOrder>
+				</ModuleInstance>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Exhibition/ExhibitionShowSpecials.ascx</ModuleUserControl>
+					<Title>Exhibition Show Specials</Title>
+					<Pane>pageHeader</Pane>
+					<SortOrder>2</SortOrder>
+				</ModuleInstance>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Exhibition/ExhibitionCategoryList.ascx</ModuleUserControl>
+					<Title>Exhibition Category List</Title>
+					<Pane>leftSidebar</Pane>
+					<SortOrder>1</SortOrder>
+				</ModuleInstance>
+				<ModuleInstance>
+					<ModuleUserControl>~/Containers/PrimaryContainer/PrimaryContainer.ascx</ModuleUserControl>
+					<Pane>contentPane</Pane>
+					<SortOrder>1</SortOrder>
+					<ModuleInstances>
+						<ModuleInstance>
+							<ModuleUserControl>~/Modules/Exhibition/ExhibitionVendorList.ascx</ModuleUserControl>
+							<Title>Exhibition Vendor List</Title>
+							<SortOrder>1</SortOrder>
+						</ModuleInstance>
+					</ModuleInstances>
+				</ModuleInstance>
+			</ModuleInstances>
+
+			<PageParameters>
+				<PageParameter>
+					<ParameterType>PageCustomCssClass</ParameterType>
+					<ParameterValue>Exhibition</ParameterValue>
+				</PageParameter>
+			</PageParameters>
+		</Page>
+
+		<Page>
+			<Name>ExhibitionVendor</Name>
+			<Title>ExhibitionVendor</Title>
+			<KeyWords></KeyWords>
+			<Template>~/Templates/TwoColumnLayout/TwoColumnLayout.ascx</Template>
+			<SortOrder>4</SortOrder>
+			<Navigable>False</Navigable>
+			<Hidden>True</Hidden>
+			<LogInToView>False</LogInToView>
+			<IncludeInSitemap>False</IncludeInSitemap>
+			<ModuleInstances>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Exhibition/ExhibitionHeader.ascx</ModuleUserControl>
+					<Title>Exhibition Header</Title>
+					<Pane>pageHeader</Pane>
+					<SortOrder>1</SortOrder>
+				</ModuleInstance>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Exhibition/ExhibitionShowSpecials.ascx</ModuleUserControl>
+					<Title>Exhibition Show Specials</Title>
+					<Pane>pageHeader</Pane>
+					<SortOrder>2</SortOrder>
+				</ModuleInstance>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Exhibition/ExhibitionCategoryList.ascx</ModuleUserControl>
+					<Title>Exhibition Category List</Title>
+					<Pane>leftSidebar</Pane>
+					<SortOrder>1</SortOrder>
+				</ModuleInstance>
+				<ModuleInstance>
+					<ModuleUserControl>~/Modules/Article/ArticleDetail.ascx</ModuleUserControl>
+					<Title>Article Detail</Title>
+					<Pane>contentPane</Pane>
+					<SortOrder>1</SortOrder>
+					<ModuleInstanceSettings>
+						<ModuleInstanceSetting>
+							<Name>ArticleDetailShowUnpublishedArticles</Name>
+							<Value>True</Value>
+						</ModuleInstanceSetting>
+					</ModuleInstanceSettings>
+				</ModuleInstance>
+			</ModuleInstances>
+			<PageParameters>
+				<PageParameter>
+					<ParameterType>PageCustomCssClass</ParameterType>
+					<ParameterValue>Exhibition</ParameterValue>
+				</PageParameter>
+				<PageParameter>
+					<ParameterType>PageWebAnalyticsCode</ParameterType>
+					<ParameterValue>s.events=&quot;event30&quot;;s.eVar19=&quot;&lt;VendorID&gt;&quot;;s.eVar6=VP.ExhibitionHeader.VendorName;s.eVar16=VP.ExhibitionHeader.ExhibitionId;</ParameterValue>
+				</PageParameter>
+			</PageParameters>
+		</Page>
+
+		<Page>
+			<Name>ArticleDetail</Name>
+			<Title>Article Detail</Title>
+			<KeyWords></KeyWords>
+			<Template>~/Templates/TwoColumnLayout/TwoColumnLayout.ascx</Template>
+			<SortOrder>5</SortOrder>
+			<Navigable>False</Navigable>
+			<Hidden>True</Hidden>
+			<LogInToView>False</LogInToView>
+			<IncludeInSitemap>True</IncludeInSitemap>
+			<ModuleInstances>
+				<ModuleInstance>
+					<ModuleUserControl>~/Containers/PrimaryContainer/PrimaryContainer.ascx</ModuleUserControl>
+					<Pane>contentPane</Pane>
+					<SortOrder>1</SortOrder>
+					<ModuleInstances>
+						<ModuleInstance>
+							<ModuleUserControl>~/Modules/Article/ArticleDetail.ascx</ModuleUserControl>
+							<Title>Article Detail</Title>
+							<SortOrder>1</SortOrder>
+						</ModuleInstance>
+					</ModuleInstances>
+				</ModuleInstance>
+			</ModuleInstances>
+		</Page>
+
+		<Page>
+			<Name>VendorDetail</Name>
+			<Title>Vendor Detail</Title>
+			<KeyWords></KeyWords>
+			<Template>~/Templates/TwoColumnLayout/TwoColumnLayout.ascx</Template>
+			<SortOrder>6</SortOrder>
+			<Navigable>False</Navigable>
+			<Hidden>True</Hidden>
+			<LogInToView>False</LogInToView>
+			<IncludeInSitemap>False</IncludeInSitemap>
+			<ModuleInstances>
+				<ModuleInstance>
+					<ModuleUserControl>~/Containers/PrimaryContainer/PrimaryContainer.ascx</ModuleUserControl>
+					<Pane>contentPane</Pane>
+					<SortOrder>1</SortOrder>
+					<ModuleInstances>
+						<ModuleInstance>
+							<ModuleUserControl>~/Modules/VendorDetail/VendorDetail.ascx</ModuleUserControl>
+							<Title>Vendor Detail</Title>
+							<SortOrder>1</SortOrder>
+						</ModuleInstance>
+					</ModuleInstances>
+				</ModuleInstance>
+			</ModuleInstances>
+		</Page>
+		
+	</Pages>
+</Site>

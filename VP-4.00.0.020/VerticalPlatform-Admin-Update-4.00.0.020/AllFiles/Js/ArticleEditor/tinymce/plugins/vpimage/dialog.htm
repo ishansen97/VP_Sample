@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Image</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../../../JQuery/jquery-1.4.2.min.js""></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+	
+</head>
+<body>
+
+<form onsubmit="VPImageDialog.insert();return false;" action="#">
+	<table>
+		<tr>
+			<td>Image Name:</td>
+			<td><input type="text" id="txtImage" tabindex="1" /></td>
+		</tr>
+		<tr>
+			<td>Image Width:</td>
+			<td><input type="text" id="txtWidth" tabindex="2" /></td>
+		</tr>
+		<tr>
+			<td>Image Height:</td>
+			<td><input type="text" id="txtHeight" tabindex="3" /></td>
+		</tr>
+		<tr>
+			<td>Image 'alt' tag value:</td>
+			<td><input type="text" id="txtAlt" tabindex="4"/></td>
+		</tr>
+		<tr>
+			<td>Custom Css:</td>
+			<td><input type="text" id="txtCss" tabindex="5"/></td>
+		</tr>
+		<tr>
+			<td>Image Figure:</td>
+			<td><input type="checkbox" id="cbFigure" tabindex="5"/></td>
+		</tr>
+		<tr>
+			<td>Image Zoom:</td>
+			<td> <input type="checkbox" id="cbZoom" tabindex="6"/></td>
+		</tr>
+	</table>
+	<ul class="errorPanel">
+	</ul>
+	
+	<div class="mceActionPanel newWindow">
+		<input type="button" id="insert" name="insert" value="Save" tabindex="6" onclick="VPImageDialog.insert();" />
+		<input type="button" id="cancel" name="cancel" value="Cancel" tabindex="7" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+
+</body>
+</html>

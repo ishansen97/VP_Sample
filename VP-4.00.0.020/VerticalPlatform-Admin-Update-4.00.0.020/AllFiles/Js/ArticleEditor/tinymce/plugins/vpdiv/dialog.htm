@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Insert Div Tag</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../../../JQuery/jquery-1.4.2.min.js""></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+</head>
+<body>
+
+<form onsubmit="DivTagDialog.insert();return false;" action="#">
+    <table>
+		<tr>
+			<td>Css Classes:</td>
+			<td> 
+				<select style="width: 150px;" id="ddlClasses" tabindex="1">
+					<option value='-1'>-Select-</option>
+					<option value='floatLeft'>floatLeft</option>
+					<option value='floatRight'>floatRight</option>
+					<option value='smallImage'>smallImage</option>
+					<option value='smallImageLeft'>smallImageLeft</option>
+					<option value='smallImageRight'>smallImageRight</option>
+					<option value='imageCaption'>imageCaption</option>
+					<option value='imageCaptionLeft'>imageCaptionLeft</option>
+					<option value='imageCaptionRight'>imageCaptionRight</option>
+					<option value='caption'>caption</option>
+					<option value='clear'>clear</option>
+					<option value='highlight'>highlight</option>
+					<option value='center'>center</option>
+					<option value='zoomImage'>zoomImage</option>
+					<option value='imageNoborder'>imageNoborder</option>
+					<option value='highlightAuthorSection'>highlightAuthorSection</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Custom Styles:</td>
+			<td> <input type="text" style="width: 150px;" id="txtCustomStyle" tabindex="2" /></td>
+		</tr>
+		<tr>
+			<td></td><td>(eg: width: 45px;)</td>
+		</tr>
+		
+	 </table>
+	
+
+	<div class="mceActionPanel">
+		<input type="button" id="insert" name="insert" value="Save" onclick="DivTagDialog.insert();" />
+		<input type="button" id="cancel" name="cancel" value="Cancel" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+
+</body>
+</html>

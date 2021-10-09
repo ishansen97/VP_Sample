@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ProductCategoryMatrixLink.ascx.cs" Inherits="VerticalPlatformWeb.Modules.ProductDetail.ProductCategoryMatrixLink" %>
+<a href="<%=_matrixUrl %>"><%=_matrixUrlName %></a>

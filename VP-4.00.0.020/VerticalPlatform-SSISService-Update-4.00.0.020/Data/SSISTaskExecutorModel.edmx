@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SSISTaskExecutorModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SSISTaskExecutorModelStoreContainer">
+          <EntitySet Name="ssis_task_log" EntityType="SSISTaskExecutorModel.Store.ssis_task_log" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="ssis_task_log">
+          <Key>
+            <PropertyRef Name="ssis_task_log_id" />
+          </Key>
+          <Property Name="ssis_task_log_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="task_id" Type="int" Nullable="false" />
+          <Property Name="error_code" Type="int" Nullable="false" />
+          <Property Name="error_description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="enabled" Type="bit" Nullable="false" />
+          <Property Name="modified" Type="smalldatetime" Nullable="false" />
+          <Property Name="created" Type="smalldatetime" Nullable="false" />
+          <Property Name="is_completed" Type="bit" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SSISTaskExecutorModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SSISTaskExecutorEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ssis_task_log" EntityType="SSISTaskExecutorModel.ssis_task_log" />
+        </EntityContainer>
+        <EntityType Name="ssis_task_log">
+          <Key>
+            <PropertyRef Name="ssis_task_log_id" />
+          </Key>
+          <Property Name="ssis_task_log_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="task_id" Type="Int32" Nullable="false" />
+          <Property Name="error_code" Type="Int32" Nullable="false" />
+          <Property Name="error_description" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="enabled" Type="Boolean" Nullable="false" />
+          <Property Name="modified" Type="DateTime" Nullable="false" />
+          <Property Name="created" Type="DateTime" Nullable="false" />
+          <Property Name="is_completed" Type="Boolean" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SSISTaskExecutorModelStoreContainer" CdmEntityContainer="SSISTaskExecutorEntities">
+          <EntitySetMapping Name="ssis_task_log">
+            <EntityTypeMapping TypeName="SSISTaskExecutorModel.ssis_task_log">
+              <MappingFragment StoreEntitySet="ssis_task_log">
+                <ScalarProperty Name="ssis_task_log_id" ColumnName="ssis_task_log_id" />
+                <ScalarProperty Name="task_id" ColumnName="task_id" />
+                <ScalarProperty Name="error_code" ColumnName="error_code" />
+                <ScalarProperty Name="error_description" ColumnName="error_description" />
+                <ScalarProperty Name="enabled" ColumnName="enabled" />
+                <ScalarProperty Name="modified" ColumnName="modified" />
+                <ScalarProperty Name="created" ColumnName="created" />
+                <ScalarProperty Name="is_completed" ColumnName="is_completed" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="SSISTaskExecutorModel">
+        <EntityTypeShape EntityType="SSISTaskExecutorModel.ssis_task_log" Width="1.5" PointX="0.75" PointY="0.75" Height="2.5571907552083335" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>

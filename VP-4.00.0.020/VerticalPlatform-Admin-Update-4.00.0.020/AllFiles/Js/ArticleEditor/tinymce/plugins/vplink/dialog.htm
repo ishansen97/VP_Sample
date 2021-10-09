@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Link</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../../../JQuery/jquery-1.4.2.min.js""></script>
+	<script type="text/javascript" src="js/dialog.js"></script>
+	
+</head>
+<body>
+
+<form onsubmit="VPLinkDialog.insert();return false;" action="#">
+	<table>
+		<tr>
+			<td>Internal Link:</td>
+			<td><input  type ="checkbox" id="cbInternal" /></td>
+		</tr>
+		<tr>
+			<td>Url:</td>
+			<td> <input type="text" id="txtUrl" tabindex="1" /></td>
+		</tr>
+		<tr>
+			<td>Text:</td>
+			<td><input type="text" id="txtText" tabindex="2" /></td>
+		</tr>
+		<tr>
+			<td>Title:</td>
+			<td><input type="text" id="txtTitle" tabindex="3" /></td>
+		</tr>
+		<tr>
+			<td>Open In New Window:</td>
+			<td><input  type ="checkbox" id="cbNewWindow" tabindex="4" /></td>
+		</tr>
+		<tr>
+			<td>Custom Css: </td>
+			<td><input type="text" id="txtCss" tabindex="5" /></td>
+		</tr>
+		<tr>
+			<td>Image:</td>
+			<td><input type="text" id="txtImage" tabindex="6" /></td>
+		</tr>
+		<tr>
+			<td>NoFollow Link:</td>
+			<td><input type="checkbox" id="nofollowCheck" tabindex="7" /></td>
+		</tr>
+	</table>
+	<ul class="errorPanel">
+	</ul>
+	
+	<div class="mceActionPanel newWindow">
+		<input type="button" id="insert" name="insert" value="Save" tabindex="7" onclick="VPLinkDialog.insert();" />
+		<input type="button" id="cancel" name="cancel" value="Cancel" tabindex="8" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
+
+</body>
+</html>

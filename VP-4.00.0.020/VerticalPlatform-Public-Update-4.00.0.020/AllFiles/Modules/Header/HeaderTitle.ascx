@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="HeaderTitle.ascx.cs" Inherits="VerticalPlatformWeb.Modules.Header.HeaderTitle" %>
+<asp:Literal ID="ltlHeaderTitle" runat="server"></asp:Literal>

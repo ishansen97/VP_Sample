@@ -1,0 +1,1 @@
+﻿RegisterNamespace("VP.ArticleCommentList");

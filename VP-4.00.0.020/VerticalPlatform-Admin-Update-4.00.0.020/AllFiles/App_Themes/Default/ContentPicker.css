@@ -1,0 +1,70 @@
+﻿#pager ul.pages {
+display:block;
+border:none;
+text-transform:uppercase;
+font-size:10px;
+margin:10px;
+padding:0;
+}
+
+#pager ul.pages li {
+list-style:none;
+float:left;
+border:1px solid #ccc;
+text-decoration:none;
+margin:0 5px 0 0;
+padding:5px;
+}
+
+#pager ul.pages li:hover {
+border:1px solid #003f7e;
+}
+
+#pager ul.pages li.pgEmpty {
+border:1px solid #eee;
+color:#eee;
+}
+
+#pager ul.pages li.pgCurrent {
+border:1px solid #003f7e;
+color:#000;
+font-weight:700;
+background-color:#eee;
+}
+
+
+.ui-autocomplete { position: absolute; cursor: default; }	
+.ui-autocomplete-loading { background: white url('images/Progress.gif') right center no-repeat; }
+.ui-autocomplete-loading-complete { background: white;}
+
+/* workarounds */
+* html .ui-autocomplete { width:1px; } /* without this, the menu expands to 100% in IE6 */
+
+ul.ui-autocomplete {
+list-style:none ;
+}
+
+.contentTableRaw-select td{ background-color:#eeeeee;  cursor: pointer}
+
+.contentSearch_window{border:solid 1px #BBBBBB; background:#ffffff; z-index:1000px; padding:5px 5px 10px 5px; margin-top:5px; width:500px;}
+.contentPickerPopUp{width:auto; min-width:350px; max-width:550px; border:solid 1px #bbbbbb;  -moz-border-radius: 4px; -webkit-border-radius: 4px; z-index:1100; }
+.cpp_autoCompleteResults{overflow: auto; max-height: 300px; height:auto;margin-top:10px;}
+
+.dialog_content .contentSearch_window {width:425px;}
+.dialog_content .contentPickerPopUp {width:auto; min-width:350px; max-width:450px; z-index:10000;}
+.dialog_content .cpp_autoCompleteResults{max-height: 200px; height:auto;}
+.dialog_content .ui-tabs .ui-tabs-panel{padding:5px;}
+
+input[type="checkbox"].filter-checkbox {
+    margin-left: 5px;
+    margin-top: -2px;
+}
+
+label.fixed-width {
+    width: 36px;
+}
+
+div.filter-top-margin {
+    margin-top: 10px;
+}
+

@@ -1,0 +1,671 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VerticalPlatform.InternalApi</name>
+    </assembly>
+    <members>
+        <member name="T:VerticalPlatform.InternalApi.Controllers.V1.JobsController">
+            <summary>
+              Api Test endpoint
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.Post(VerticalPlatform.InternalApi.DTO.JobModel)">
+            <summary>
+             Add Job
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.Put(VerticalPlatform.InternalApi.DTO.JobModel)">
+            <summary>
+              Update Job
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.GetReportJobsAndTask">
+            <summary>
+              Get report jobs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.GetProductionPushJobandTasks">
+            <summary>
+              Get production push jobs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.GetCleanUpJobandTasks">
+            <summary>
+              Get clean up jobs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.GetCompletedJobs(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+              Get completed jobs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.UpdateStatus(VerticalPlatform.InternalApi.DTO.JobModel)">
+            <summary>
+              Update Job status
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.CleanUpJob(System.Int32)">
+            <summary>
+              Update clean up 
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.CancelJobandTasks(System.Int32)">
+            <summary>
+              Cancel Job
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.UnscheduleJobAndTasks(System.Int32)">
+            <summary>
+              Cancel Job
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.UpdatePriority(VerticalPlatform.InternalApi.DTO.JobModel)">
+            <summary>
+              Update Job status
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.GetAllSites">
+            <summary>
+              Get all GetAllTestModelsAnonymous
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.GetVendors(System.Int32)">
+            <summary>
+              Get all GetAllTestModelsAnonymous
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.GetDataUploadUrl(VerticalPlatform.InternalApi.DTO.JobModel)">
+            <summary>
+              Get 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.GetReportDownloadUrl(System.Int32)">
+            <summary>
+              Get 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.GetVendorStatus(System.Int32)">
+            <summary>
+              Get the status for the vendor 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.Upload(System.Int32)">
+            <summary>
+              Upload the rule file status for the vendor 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.JobsController.ReQueueReports(System.Int32)">
+            <summary>
+              reQueue job and task in reports 
+            </summary>
+        </member>
+        <member name="T:VerticalPlatform.InternalApi.Controllers.V1.TasksController">
+            <summary>
+              Api Test endpoint
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.TasksController.Post(VerticalPlatform.InternalApi.DTO.TaskModel)">
+            <summary>
+             Add Task
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.TasksController.GetTasksByJobId(System.Int32)">
+            <summary>
+              Get all GetAllTestModelsAnonymous
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Controllers.V1.TasksController.UpdateStatus(VerticalPlatform.InternalApi.DTO.TaskModel)">
+            <summary>
+              Update task status
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.CollectionModel`1.Data">
+            <summary>
+            jobs
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.CollectionModel`1.TotalCount">
+            <summary>
+            Total data count
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.DTO.Constants.Reports.InsertReport">
+            <summary>
+            Rapid Report files names
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.Id">
+            <summary>
+            job id
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.SiteId">
+            <summary>
+            site id
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.SiteName">
+            <summary>
+            site name
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.VendorId">
+            <summary>
+            Vendor id
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.VendorName">
+            <summary>
+            Vendor Name
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.Status">
+            <summary>
+            Status of the Job
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.State">
+            <summary>
+            State of the Job
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.DataFileName">
+            <summary>
+            Data file Name for the job
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.DataFilePath">
+            <summary>
+            Data file path for job
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.Order">
+            <summary>
+            Job processing order
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.Emails">
+            <summary>
+            Emails used nofiy about the job
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.IsError">
+            <summary>
+              Indicates whether error occurred
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.ErrorMessage">
+            <summary>
+              Error Message
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.IsWarning">
+            <summary>
+              Indicates whether there is a warning
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.WarningMessage">
+            <summary>
+              Warning Message
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.CreatedOn">
+            <summary>
+              Job Created Time
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.StartTime">
+            <summary>
+              Reporting StartTime
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.EndTime">
+            <summary>
+              CleanUp EndTime
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.TotalDuration">
+            <summary>
+              FinishedTaskDuration
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.ModifiedTime">
+            <summary>
+              Job last modified time
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.JobModel.Tasks">
+            <summary>
+            Emails used nofiy about the job
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.VendorStatusModel.Message">
+            <summary>
+            status message
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.VendorStatusModel.ruleFileStatus">
+            <summary>
+            is ruleFileStatus 
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.VendorStatusModel.isVendorOk">
+            <summary>
+            is ruleFileStatus 
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.SiteModel.Name">
+            <summary>
+            Vendor name
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.SiteModel.Id">
+            <summary>
+            Vendor id
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.Id">
+            <summary>
+            task id
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.JobId">
+            <summary>
+            Job id
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.Status">
+            <summary>
+            Status of the task
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.TaskType">
+            <summary>
+            type of the task
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.StartTime">
+            <summary>
+            startTime of the task
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.EndTime">
+            <summary>
+            endTime of the task
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.IsError">
+            <summary>
+              Indicates whether error occurred
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.ErrorMessage">
+            <summary>
+              Error Message
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.InsertedRecords">
+            <summary>
+            Inserted records count
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.UpdatedRecords">
+            <summary>
+            Updated records count
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.DeletedRecords">
+            <summary>
+            Deleted records count
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.ErrorRecords">
+            <summary>
+            Error records count
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.TaskDuration">
+            <summary>
+              Finished Task Duration
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.UnchangedProductCount">
+            <summary>
+            UnchangedProductCount
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.ReEnabledProductCount">
+            <summary>
+            ReEnabledProductCount
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.IgnoredInRapidProductCount">
+            <summary>
+            IgnoredInRapidProductCount
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.TaskModel.IgnoredSearchOptionProductCount">
+            <summary>
+            IgnoredSearchOptionProductCount
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.UploadURLModel.Url">
+            <summary>
+            PreSignedURL 
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.UploadURLModel.FilePath">
+            <summary>
+            Vendor id
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.VendorModel.Name">
+            <summary>
+            Vendor name
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.DTO.VendorModel.Id">
+            <summary>
+            Vendor id
+            </summary>
+        </member>
+        <member name="T:VerticalPlatform.InternalApi.Filters.AuthenticationFilter">
+            <summary>
+              Custom Authentication Filter
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.Filters.AuthenticationFilter._siteService">
+            <summary>
+            An instance of <see cref="T:VerticalPlatform.Core.Services.SiteService"/>.
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.Filters.AuthenticationFilter.Authorization">
+            <summary>
+            authorization header
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Filters.AuthenticationFilter.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+              read requested header and validated
+            </summary>
+            <param name="actionContext"></param>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Filters.AuthenticationFilter.SkipAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+              AllowAnonymousAttribute handler
+            </summary>
+            <param name="actionContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VerticalPlatform.InternalApi.Filters.CustomExceptionFilter">
+            <summary>
+              Custom Exception Filter
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Filters.CustomExceptionFilter.OnException(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+              On Exception handler
+            </summary>
+            <param name="actionExecutedContext"></param>
+        </member>
+        <member name="T:VerticalPlatform.InternalApi.Handlers.ContextHandler">
+            <summary>
+              Handler to load the context.
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Handlers.ContextHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+              Overridden SendAsync method from <see cref="T:System.Net.Http.DelegatingHandler" />.
+            </summary>
+            <param name="request">The <see cref="T:System.Net.Http.HttpRequestMessage" />.</param>
+            <param name="cancellationToken">The <see cref="T:System.Threading.CancellationToken" />.</param>
+            <returns>An <see cref="T:System.Net.Http.HttpResponseMessage" /> based <see cref="T:System.Threading.Tasks.Task" />.</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Handlers.ContextHandler.GetSite(System.String)">
+            <summary>
+              Gets the site based on the host and base url.
+            </summary>
+            <param name="hostUrl">The host url.</param>
+            <returns>The <see cref="T:VerticalPlatform.Core.Data.Entities.Site" />.</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Handlers.ContextHandler.GetUserLocationFromRequestParameters">
+            <summary>
+              Gets the user location from current http request parameters.
+            </summary>
+            <returns>An instance of <see cref="T:VerticalPlatform.Core.Data.Entities.Country" />.</returns>
+        </member>
+        <member name="T:VerticalPlatform.InternalApi.Handlers.SiteContext">
+            <summary>
+              Stores information about the current site.
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.Handlers.SiteContext.SiteContextKey">
+            <summary>
+              The key used to store the site context inside http context.
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Handlers.SiteContext.#ctor(VerticalPlatform.Core.Data.Entities.Site)">
+            <summary>
+              Initializes a new instance of the <see cref="T:VerticalPlatform.InternalApi.Handlers.SiteContext" /> class.
+            </summary>
+            <param name="site">The site instance.</param>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.Handlers.SiteContext.Site">
+            <summary>
+              Gets the current site.
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.Handlers.SiteContext.Location">
+            <summary>
+              Gets or sets the location of the current request.
+            </summary>
+            <value>The location.</value>
+        </member>
+        <member name="P:VerticalPlatform.InternalApi.Handlers.SiteContext.Current">
+            <summary>
+              Gets the current <see cref="T:VerticalPlatform.InternalApi.Handlers.SiteContext" />.
+            </summary>
+            <value>The current <see cref="T:VerticalPlatform.InternalApi.Handlers.SiteContext" />.</value>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.Handlers.SiteContext.Create(VerticalPlatform.Core.Data.Entities.Site)">
+            <summary>
+              Creates the site context and stores it in the current <see cref="T:System.Web.HttpContext" />.
+            </summary>
+            <param name="site">The current <see cref="P:VerticalPlatform.InternalApi.Handlers.SiteContext.Site" />.</param>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.InternalServices.InternalJobsService._rapidJobService">
+            <summary>
+              RapidJobService
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.InternalServices.InternalJobsService._productService">
+            <summary>
+              ProductService
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.InternalServices.InternalJobsService._siteService">
+            <summary>
+              SiteService
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.InternalServices.InternalJobsService._internalTaskService">
+            <summary>
+              SiteService
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.s3Client">
+            <summary>
+              S3Client
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.AddJob(VerticalPlatform.InternalApi.DTO.JobModel)">
+            <summary>
+              Add job
+            </summary>
+            <returns>JobModel</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.UpdateJob(VerticalPlatform.InternalApi.DTO.JobModel)">
+            <summary>
+              Update job
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetReportJobsAndTask">
+            <summary>
+              get jobs by status
+            </summary>
+            <returns>jobs list</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetCompletedJobs(System.Int32,System.Int32,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+              get jobs by status
+            </summary>
+            <returns>jobs list</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetProductionPushJobsandTasks">
+            <summary>
+              get production push jobs
+            </summary>
+            <returns>jobs list</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetCleanUpJobsAndTasks">
+            <summary>
+              get clean up jobs
+            </summary>
+            <returns>jobs list</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetVendorNameAndInternalName(VerticalPlatform.Core.Data.Entities.Vendor)">
+            <summary>
+              Gets Vendor name and Internal Name.
+            </summary>
+            <returns>string</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetJobModelFromRapidJob(VerticalPlatform.Core.Data.Entities.RapidJob)">
+            <summary>
+              Gets RapidJob and returns job model.
+            </summary>
+            <returns>JobModel</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.UpdateAllTimes(VerticalPlatform.InternalApi.DTO.JobModel)">
+            <summary>
+              update all times on JobModel.
+              ReportingStartTime
+              CleanUpEndTime
+              TotalDuration
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.UpdateStatus(System.Int32,VerticalPlatform.Core.Data.Entities.RapidStatus)">
+            <summary>
+              update status
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.CancelJobAndTasks(System.Int32)">
+            <summary>
+              Cancel Job and Tasks related to it.
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.UnscheduleJobAndTasks(System.Int32)">
+            <summary>
+              Unscheduled Job and Tasks.
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.CleanUpJob(System.Int32)">
+            <summary>
+              clean up job
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.AddRequiredReportTaskType(System.Int32,System.Collections.Generic.List{VerticalPlatform.Core.Data.Entities.RapidTaskType},VerticalPlatform.Core.Data.Entities.RapidTaskType)">
+            <summary>
+            Adds required reporting task type
+            </summary>
+            <param name="count"></param>
+            <param name="requiredTasks"></param>
+            <param name="taskType"></param>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.ChangePriority(System.Int32,System.Int32)">
+            <summary>
+              update processing order
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetSites">
+            <summary>
+              Get all sites
+            </summary>
+            <returns>list of Sites</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetVendors(System.Int32)">
+            <summary>
+              Get vendors
+            </summary>
+            <returns>list of vendors for site</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetPreSignedDataUploadUrl(VerticalPlatform.InternalApi.DTO.JobModel)">
+            <summary>
+            Generates presinged url to upload
+            </summary>
+            <param name="jobId">Id of the vendor.</param>
+            <returns>A string object with a presigned URL.</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetPreSignedReportDownloadUrl(System.Int32)">
+            <summary>
+            Generates presinged url to upload
+            </summary>
+            <param name="jobId">job id of the report.</param>
+            <returns>A string object with a presigned URL.</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.GetVendorStatus(System.Int32)">
+            <summary>
+              Get the status of rule file for vendor
+            </summary>
+            <returns>rule file status model</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.AcceptRuleFileUpload(System.Net.Http.HttpRequestMessage,System.Int32)">
+            <summary>
+              Update the uploading rule file for vendor
+            </summary>
+            <returns>HttpResponseMessage</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalJobsService.ReQueueReports(System.Int32)">
+            <summary>
+              reQueue job and task in reports 
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.InternalApi.InternalServices.InternalTasksService._rapidJobService">
+            <summary>
+              RapidJobService
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalTasksService.AddTask(VerticalPlatform.InternalApi.DTO.TaskModel)">
+            <summary>
+              Add Task
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalTasksService.GetTasksAndCountsByJobId(System.Int32)">
+            <summary>
+              get task and counts by Job id
+            </summary>
+            <returns>TaskModel list</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalTasksService.GetTasksByJobId(System.Int32)">
+            <summary>
+              get tasks by Job id
+            </summary>
+            <returns>TaskModel list</returns>
+        </member>
+        <member name="M:VerticalPlatform.InternalApi.InternalServices.InternalTasksService.UpdateStatus(System.Int32,VerticalPlatform.Core.Data.Entities.RapidStatus)">
+            <summary>
+              update status
+            </summary>
+        </member>
+    </members>
+</doc>

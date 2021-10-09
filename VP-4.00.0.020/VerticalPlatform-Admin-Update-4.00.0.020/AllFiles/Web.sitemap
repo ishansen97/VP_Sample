@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode>
+
+    <siteMapNode url="~/Default.aspx" title="Home" subsystem="None" operation="All" />
+
+    <siteMapNode title="Product" subsystem="Product" operation="All" >
+      <siteMapNode url="~/ModuleAdmin/Product/ProductList.aspx" title="Products" subsystem="Product" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Category/SpecificationTypeList.aspx" title="Specifications" subsystem="Product" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Product/ProductTemplateCreation.aspx" title="Product Template Creation" subsystem="Product" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Product/ProductTemplateUpload.aspx" title="Product Template Upload" subsystem="Product" operation="Upload" />
+      <siteMapNode url="~/ModuleAdmin/Product/ReviewSaveUploadedProductTemplate.aspx" title="Review/Save Product Template" subsystem="Product" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Product/ProductCompression.aspx" title="Product Compression" subsystem="Product" operation="Add" />
+      <siteMapNode url="~/ModuleAdmin/Product/GroupProductList.aspx" title="Add Products to Compression Group" subsystem="Product" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Product/OrphanProducts.aspx" title="Orphan Products" subsystem="Product" operation="View" />
+      <siteMapNode url="~/Platform/Task/RapidJobQueueList.aspx" title="Rapid Job Queue List" subsystem="Product" operation="View"/>
+    </siteMapNode>
+
+    <siteMapNode title="Article" subsystem="Article" operation="All" >
+      <siteMapNode url="~/ModuleAdmin/Article/ArticleTypeList.aspx" title="Article Type List" subsystem="Article" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Article/AddArticle.aspx?iat=true" title="Add Article Template" subsystem="Article" operation="Add" />
+      <siteMapNode url="~/ModuleAdmin/Article/ArticleList.aspx?iat=true" title="Article Template List" subsystem="Article" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Article/AuthorList.aspx" title="Author List" subsystem="Article" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Article/AddArticle.aspx" title="Add Article" subsystem="Article" operation="Add" />
+      <siteMapNode url="~/ModuleAdmin/Article/ArticleList.aspx" title="Article List" subsystem="Article" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Article/DeletedArticleList.aspx" title="Deleted Article/Template List" subsystem="Article" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode title="Reviews" subsystem="None" operation="All" >
+      <siteMapNode url="~/ModuleAdmin/Reviews/ReviewTypeList.aspx" title="Review Type List" subsystem="None" operation="View" />
+      <siteMapNode url="~/Platform/Field.aspx?fctid=37" title="Review Form Fields" subsystem="Article" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Reviews/ReviewDashboard.aspx" title="Review Dashboard" subsystem="Article" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode title="Vendor" subsystem="Vendor" operation="All" >
+      <siteMapNode url="~/ModuleAdmin/Vendors/VendorList.aspx" title="Vendor List" subsystem="Vendor" operation="All" />
+      <siteMapNode url="~/ModuleAdmin/Vendors/VendorConsolidation.aspx" title="Vendor Consolidation" subsystem="Vendor" operation="All" />
+      <siteMapNode url="~/ModuleAdmin/Vendors/AssignAdminUsersForVendors.aspx" title="Assign Admin Users" subsystem="Vendor" operation="All" />
+    </siteMapNode>
+
+    <siteMapNode title="Category" subsystem="Category" operation="All" >
+      <siteMapNode url="~/ModuleAdmin/Category/CategoryList.aspx" title="Category List" subsystem="Category" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Category/OrphanCategories.aspx" title="Orphan Categories" subsystem="Category" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Category/GenerateCategory.aspx" title="Generate Categories" subsystem="Category" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode url="~/ModuleAdmin/SubHome/SubHomeList.aspx" title="Subhomes" subsystem="Category" operation="View" />
+
+    <siteMapNode title="Advertisement" subsystem="Advertisement" operation="All" >
+      <siteMapNode url="~/Platform/Advertisement/AdvertisementSlot.aspx" title="Slots" subsystem="Advertisement" operation="View" />
+      <siteMapNode url="~/Platform/Advertisement/AdvertisementType.aspx" title="Types" subsystem="Advertisement" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode title="Content" subsystem="Content" operation="All">
+      <siteMapNode url="~/ModuleAdmin/Files/FileManagement.aspx" title="Files" subsystem="Content" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Content/ContentToContentManagement.aspx" title="Create Association" subsystem="Content" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Content/ContentToContentList.aspx" title="Association List" subsystem="Content" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode title="Exhibitions" subsystem="Exhibition" operation="View" url="~/ModuleAdmin/Exhibition/ExhibitionList.aspx" />
+
+    <siteMapNode title="Fixed URLs" subsystem="FixedUrl" operation="View" url="~/ModuleAdmin/FixedUrls/FixedUrlManager.aspx" />
+
+    <siteMapNode title="Vanity URLs" subsystem="VanityUrl" operation="View" url="~/ModuleAdmin/VanityUrls/VanityUrlList.aspx" />
+
+    <siteMapNode title="Lead" subsystem="Lead" operation="All" >
+      <siteMapNode url="~/ModuleAdmin/Lead/LeadDeploymentData.aspx" title="Lead Deploy Data" subsystem="Lead" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Lead/LeadSchedule.aspx" title="Lead Schedules" subsystem="Lead" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Lead/LeadMaintenance.aspx" title="Lead Maintenance" subsystem="Lead" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Lead/VendorList.aspx" title="Vendors" subsystem="Lead" operation="View" />
+      <siteMapNode url="https://ldadmin.comparenetworks.com/" target="_blank" title="Lead Deployment Tool" operation="None" />
+    </siteMapNode>
+
+    <siteMapNode title="Media" subsystem="Media" operation="All">
+      <siteMapNode url="~/Platform/Media/MediaFolderManager.aspx" title="Media Folder" subsystem="Media" operation="View" />
+      <siteMapNode url="~/Platform/Media/MediaSiteManager.aspx" title="Media Site" subsystem="Media" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode url="~/ModuleAdmin/Tag/TagManagement.aspx" title="Tags" subsystem="Tag" operation="View" />
+
+    <siteMapNode title="User" subsystem="User" operation="All" >
+      <siteMapNode url="~/Platform/User/AddEditUserRoles.aspx" title="Admin User Roles" subsystem="User" operation="Add" />
+      <!--<siteMapNode url="~/Platform/User/AddEditDomainUserGroup.aspx" title="Domain User Group Mapping" subsystem="User" operation="Add" />-->
+      <siteMapNode url="~/Platform/User/UserList.aspx" title="Admin User List" subsystem="User" operation="View" />
+      <siteMapNode url="~/Platform/User/UserProfile.aspx" title="Profile" subsystem="User" operation="Edit" />
+      <siteMapNode url="~/Platform/PublicUser/PublicUser.aspx" title="Add Public User" subsystem="User" operation="View" />
+      <siteMapNode url="~/Platform/PublicUser/PublicUserList.aspx" title="Public User List" subsystem="User" operation="View" />
+      <siteMapNode url="~/Platform/Field.aspx?fctid=9" title="User Fields" subsystem="User" operation="View" />
+      <siteMapNode url="~/Platform/PublicUser/UserFieldsMapping.aspx" title="User Fields Mapping" subsystem="User" operation="View" />
+      <siteMapNode url="~/Platform/User/TwoFactorAuthentication.aspx" title="Two Factor Authentication" subsystem="User" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode title="Site" subsystem="Site" operation="All" >
+      <siteMapNode url="~/Platform/Site/AddSite.aspx" title="Site Management" subsystem="Site" operation="Add" />
+      <siteMapNode url="~/Platform/Site/AddMenuAction.aspx" title="Navigation Menu Actions" subsystem="Site" operation="Add"/>
+      <siteMapNode url="~/Platform/PageList.aspx" title="Pages" subsystem="Site" operation="View" />
+      <siteMapNode url="~/Platform/PageType.aspx" title="Page Types" subsystem="Site" operation="View" />
+      <siteMapNode url="~/Platform/Site/RegistrationForm.aspx" title="Registration Form" subsystem="Advertisement" operation="View" />
+      <siteMapNode url="~/Platform/Site/LeadTypeList.aspx" title="Lead Types/ Clickthrough Types" subsystem="Lead" operation="View" />
+      <siteMapNode url="~/Platform/PageDesigner.aspx?tt=2" title="Common Modules" subsystem="Site" operation="View" />
+      <siteMapNode url="~/Platform/Site/CustomPropertyList.aspx" title="Custom Property" subsystem="Site" operation="View" />
+      <siteMapNode url="~/Platform/Site/DeleteSite.aspx" title="Delete" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/Region/RegionList.aspx" title="Regions" subsystem="BulkEmail" operation="View" />
+      <siteMapNode url="~/Platform/Site/CompressionGroups.aspx" title="Compression Groups" subsystem="Site" operation="View" />
+      <siteMapNode url="~/Platform/Site/ProductCompletenessFactorsList.aspx" title="Product Completeness Factors" subsystem="Product" operation="View" />
+      <siteMapNode url="~/Platform/Site/ClientTokens.aspx" title="Clients" subsystem="Site" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode title="Bulk Email" subsystem="BulkEmail" operation="All">
+      <siteMapNode url="~/ModuleAdmin/BulkEmail/EmailTemplateList.aspx" title="Email Templates" subsystem="BulkEmail" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/BulkEmail/BulkEmailTypeList.aspx" title="Bulk Email Types" subsystem="BulkEmail" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/BulkEmail/CampaignTypeList.aspx" title="Campaign Types" subsystem="BulkEmail" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/BulkEmail/SegmentList.aspx" title="Segments" subsystem="BulkEmail" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/BulkEmail/CampaignList.aspx" title="Campaigns" subsystem="BulkEmail" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/BulkEmail/DeletedCampaignList.aspx" title="Deleted Campaigns" subsystem="BulkEmail" operation="View" />
+      <siteMapNode title="Reports" subsystem="BulkEmail" operation="View">
+        <siteMapNode url="~/ModuleAdmin/BulkEmail/CampaignContentReport.aspx" title="Campaign Content Report" subsystem="BulkEmail" operation="View" />
+        <siteMapNode url="~/ModuleAdmin/BulkEmail/BulkEmailReport.aspx" title="Campaign Reports" subsystem="BulkEmail" operation="View" />
+      </siteMapNode>
+      <siteMapNode url="~/ModuleAdmin/BulkEmail/SubscriberList.aspx" title="Subscribers" subsystem="BulkEmail" operation="Edit" />
+    </siteMapNode>
+
+    <siteMapNode title="Forum" subsystem="Forum" operation="All" >
+      <siteMapNode url="~/ModuleAdmin/Forum/ForumTopic.aspx" title="Forum Topic" subsystem="Forum" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Forum/ForumThread.aspx" title="Forum Thread" subsystem="Forum" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Forum/ForumThreadPost.aspx" title="Forum Thread Post" subsystem="Forum" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode title="Spider Management" subsystem="Spider" operation="All" >
+      <siteMapNode url="~/ModuleAdmin/SpiderManagement/IPGroupList.aspx" title="IP Group/Address List " subsystem="Spider" operation="All" />
+      <siteMapNode url="~/ModuleAdmin/SpiderManagement/UserAgentList.aspx" title="User Agent List " subsystem="Spider" operation="All" />
+      <siteMapNode url="~/ModuleAdmin/SpiderManagement/IPAddressList.aspx" title="IP Address List" subsystem="Spider" operation="All" />
+    </siteMapNode>
+
+    <siteMapNode title="Search" subsystem="Search" operation="All" >
+      <siteMapNode url="~/ModuleAdmin/Search/SearchGroupList.aspx" title="Search Category Groups" subsystem="Search" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Search/SearchOptionList.aspx" title="Search Options" subsystem="Search" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Search/SearchRelevanceList.aspx" title="Relevancy Weights" subsystem="Search" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Search/SearchSimulator.aspx" title="Category Search Simulator" subsystem="Search" operation="View" />
+      <siteMapNode url="~/ModuleAdmin/Search/SiteWideSearchSimulator.aspx" title="Site Wide Search Simulator" subsystem="Search" operation="View" />
+    </siteMapNode>
+
+    <siteMapNode title="Application" subsystem="Application" operation="All">
+      <siteMapNode url="~/Platform/ApplicationSettings.aspx" title="Settings" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/ApplicationMessages.aspx" title="Messages" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/ModuleList.aspx" title="Modules" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/PredefinedPageList.aspx" title="Predefined Pages" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/SiteConfiguration.aspx" title="Site Configuration" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/Site/RegistrationForm.aspx?app=1" title="Registration Form" subsystem="Application" operation="None" />
+      <siteMapNode title="Lead Form" subsystem="Application" operation="None">
+        <siteMapNode url="~/Application/LeadFormDesigner.aspx?fliu=false" title="General" subsystem="Application" operation="None" />
+        <siteMapNode url="~/Application/LeadFormDesigner.aspx?fliu=true" title="Logged In Users" subsystem="Application" operation="None" />
+      </siteMapNode>
+      <siteMapNode url="~/Platform/Task/TaskList.aspx" title="Scheduled Task List" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/Task/RunningTasks.aspx" title="Running Tasks" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/Task/Spider.aspx" title="Spider Activity" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/CacheManager.aspx" title="Cache Management" subsystem="Application" operation="None" />
+      <siteMapNode url="http://10.1.1.210:9000/" target="_blank" title="Log Viewer" operation="None" />
+      <siteMapNode url="~/Platform/Currency/CurrencyList.aspx" title="Currencies" subsystem="Application" operation="None" />
+      <siteMapNode url="~/Platform/Country/CountryList.aspx" title="Countries" subsystem="Application" operation="None" />
+    </siteMapNode>
+
+	  <siteMapNode url="~/ModuleAdmin/Rapid/Rapid.aspx" title="Rapid" subsystem="Rapid" operation="View" />
+
+	</siteMapNode>
+</siteMap>

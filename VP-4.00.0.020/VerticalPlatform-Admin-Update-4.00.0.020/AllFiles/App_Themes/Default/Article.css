@@ -1,0 +1,21 @@
+﻿body
+{
+}
+.Text
+{
+	font-weight: bold;
+}
+.DragHandlerTemplate
+{
+	height: 10px;
+	width: 10px;
+	border: solid 1px black;
+	background-color: Transparent;
+	cursor: move;
+}
+.ReorderTemplate
+{
+	width: 500px;
+	height: 20px;
+	border: dotted 2px black;
+}

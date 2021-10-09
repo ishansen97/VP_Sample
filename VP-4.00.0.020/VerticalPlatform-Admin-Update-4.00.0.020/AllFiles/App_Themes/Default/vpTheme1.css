@@ -1,0 +1,2314 @@
+html
+{
+margin:0px 0px 0px 0px;
+font-family:Arial, Helvetica, sans-serif;
+background:transparent;
+font-size:12px;
+overflow-y:scroll;
+}
+
+body
+{
+margin:0px 0px 0px 0px;
+font-family:Arial, Helvetica, sans-serif;
+background:url(images/admin_UI_main_bg.png) repeat-x;
+font-size:12px;
+}
+
+.remove_scroller{overflow:hidden;}
+
+
+/* Input styling
+ -----------------------------------------------------------------------*/
+input.button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: transparent url(../Images/bcgrdInputButtons.gif) 0 0;
+    border: none;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    height: 22px;
+    cursor: pointer;
+}
+
+
+
+.datePicker .ajax__calendar_container
+{ 
+    background-color:White;
+    width: 200px;
+}
+
+.datePicker .ajax__calendar_body {
+    height:139px;
+    margin:auto;
+    overflow:hidden;
+    position:relative;
+    width:200px;
+}
+
+
+
+
+/* Site Layout
+ -----------------------------------------------------------------------*/
+.twoColumnLayout, .singleColumnLayout {
+    width: 966px;
+    margin: 0 auto;
+}
+
+.twoColumnLayout .leftSidebarOuter {
+    width: 356px;
+    margin-top: 10px;
+    float: right;
+}
+
+.twoColumnLayout .contentPaneOuter {
+    width: 600px;
+    margin-top: 50px;
+    float: left;
+}
+
+.singleColumnLayout .contentPaneOuter {
+    margin-top: 50px;
+}
+
+.Home .twoColumnLayout .contentPaneOuter {
+    margin-top: 10px;
+}
+
+.twoColumnLayout .footerOuter {
+    clear: both;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    font-size: 12px;
+    color: #666;
+    font-weight: normal;
+    border-top: 3px solid #b9c9df;
+    padding-top: 10px;
+}
+
+/* Wider Page Layout
+ -----------------------------------------------------------------------*/
+.VerticalMatrix .twoColumnLayout .leftSidebarOuter, .ProductDetail .twoColumnLayout .leftSidebarOuter {
+    width: 180px;
+    float: right;
+}
+
+.VerticalMatrix .twoColumnLayout .contentPaneOuter, .ProductDetail .twoColumnLayout .contentPaneOuter {
+    width: 776px;
+    float: left;
+}
+
+.VerticalMatrix .twoColumnLayout .contentPaneOuter .container .defaultContainerHeader, .VerticalMatrix .twoColumnLayout .contentPaneOuter .container .primaryContainerHeader, .ProductDetail .twoColumnLayout .contentPaneOuter .container .primaryContainerHeader, .ProductDetail .twoColumnLayout .contentPaneOuter .container .DefaultContainerHeader {
+    background-image: url(../Images/bcgrdModuleTop776.gif);
+}
+
+.VerticalMatrix .twoColumnLayout .contentPaneOuter .container, .ProductDetail .twoColumnLayout .contentPaneOuter .container {
+    background-image: url(../Images/bcgrdModuleBottom776.gif);
+}
+
+.VerticalMatrix .twoColumnLayout .leftSidebarOuter .container .defaultContainerHeader, .ProductDetail .twoColumnLayout .leftSidebarOuter .container .defaultContainerHeader {
+    background-image: url(../Images/bcgrdModuleTop180.gif);
+}
+
+.VerticalMatrix .twoColumnLayout .leftSidebarOuter .container, .ProductDetail .twoColumnLayout .leftSidebarOuter .container {
+    background-image: url(../Images/bcgrdModuleBottom180.gif);
+}
+
+/* Default Modules
+ -----------------------------------------------------------------------*/
+.container .defaultContainer .defaultContainerContent, .container .primaryContainerContent {
+    background: #fff;
+    padding: 20px;
+}
+
+.container .defaultContainer .defaultContainerHeader h3, .container .primaryContainer .primaryContainerHeader h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a4180;
+    font-size: 18px;
+    font-weight: bold;
+    background: #fff url(../Images/bcgrdBullet.gif) 20px 10px no-repeat;
+    padding: 9px 15px 9px 45px;
+    margin: 0;
+}
+
+.container .primaryContainerHeader h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a4180;
+    font-size: 24px;
+    font-weight: bold;
+    background: #fff url(../Images/bcgrdBullet.gif) 20px 10px no-repeat;
+    padding: 6px 15px 10px 45px;
+    margin: 0;
+}
+
+.twoColumnLayout .contentPaneOuter .container {
+    background: transparent url(../Images/bcgrdModuleBottom600.gif) 0 100% no-repeat;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+}
+
+.twoColumnLayout .contentPaneOuter .container .defaultContainerHeader, .twoColumnLayout .contentPaneOuter .container .primaryContainerHeader {
+    background: transparent url(../Images/bcgrdModuleTop600.gif) 0 0 no-repeat;
+    padding-top: 10px;
+    margin-bottom: 3px;
+}
+
+.twoColumnLayout .leftSidebarOuter .container .defaultContainerHeader, .twoColumnLayout .leftSidebarOuter .container .primaryContainerHeader {
+    background: transparent url(../Images/bcgrdModuleTop356.gif) 0 0 no-repeat;
+    padding-top: 10px;
+    margin-bottom: 3px;
+}
+
+.twoColumnLayout .leftSidebarOuter .container {
+    background: transparent url(../Images/bcgrdModuleBottom356.gif) 0 100% no-repeat;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+}
+
+.singleColumnLayout .container .defaultContainerHeader, .singleColumnLayout .container .primaryContainerHeader {
+    background: transparent url(../Images/bcgrdModuleTop966.gif) 0 0 no-repeat;
+    padding-top: 10px;
+    margin-bottom: 3px;
+}
+
+.singleColumnLayout .container, .singleColumnLayout .container {
+    background: transparent url(../Images/bcgrdModuleBottom966.gif) 0 100% no-repeat;
+    margin-bottom: 10px;
+    padding: 0 0 10px 0;
+}
+
+/* Header Styles
+ -----------------------------------------------------------------------*/
+.pageHeaderOuter {
+}
+
+.pageHeaderOuter .pageHeader {
+    position: relative;
+    height: 143px;
+}
+
+.pageHeaderOuter .siteHeaderImage {
+    display: block;
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 275px;
+    height: 87px;
+}
+
+.pageHeaderOuter .siteHeaderImage a, .pageHeaderOuter .siteHeaderImage img {
+    display: block;
+    width: 275px;
+    height: 87px;
+    padding: 0;
+    margin: 0;
+}
+
+.pageHeaderOuter .login {
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pageHeaderOuter .login a {
+    color: #fff;
+}
+
+.pageHeaderOuter .login #btnLoginPopup, .pageHeaderOuter .login #welcome {
+    display: block;
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+.pageHeaderOuter .login #welcome {
+    border-right: solid 1px #fff;
+    padding: 0 5px 0 0;
+    margin: 0 5px 0 0;
+}
+
+.pageHeaderOuter .login #btnRegisterPopup {
+    display: block;
+    border-left: solid 1px #fff;
+    float: left;
+    padding: 0 0 0 5px;
+}
+
+.pageHeaderOuter .searchControl {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 292px;
+    height: 34px;
+    background: url('../Images/bcgrdSearch.gif') 0 0;
+}
+
+.pageHeaderOuter .searchControl .textbox {
+    border: none;
+    color: #444;
+    font-size: 14px;
+    height: 16px;
+    margin-top: 8px;
+    text-align: left;
+    width: 230px;
+    margin-left: 10px;
+    float: left;
+    padding: 0;
+    background: none;
+    display: inline;
+}
+
+.pageHeaderOuter .searchControl .searchButton {
+    border: none;
+    overflow: hidden;
+    padding: 0;
+    width: 38px;
+    height: 34px;
+    text-indent: -9999em;
+    background: url('../Images/bcgrdSearch.gif') 100% -34px;
+    float: right;
+    cursor: pointer;
+    font-size: 0;
+    display: block;
+    line-height: 0;
+}
+
+.pageHeaderOuter .searchControl .searchButton:hover {
+    background-position: 100% -68px;
+}
+
+.pageHeaderOuter .menuHorizontal {
+    position: absolute;
+    top: 75px;
+    left: 280px;
+}
+
+.pageHeaderOuter .menuHorizontal ul, .pageHeaderOuter .menuHorizontal ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.pageHeaderOuter .menuHorizontal ul li {
+    float: left;
+    width: 140px;
+    height: 56px;
+    margin-right: 10px;
+    background: url('../Images/bcgrdNavigation.gif');
+    text-align: center;
+}
+
+.pageHeaderOuter .menuHorizontal ul li a {
+    background: transparent url('../Images/bcgrdNavigation.gif') 0 0;
+    display: block;
+    width: 140px;
+    height: 47px;
+    letter-spacing: -0.5px;
+    padding-top: 9px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.pageHeaderOuter .menuHorizontal ul li a:hover, .pageHeaderOuter .menuHorizontal ul li.active a {
+    background-position: 0 -56px;
+    text-decoration: none;
+    color: #128637;
+}
+
+/* Navigation and Menu Styling
+ -----------------------------------------------------------------------*/
+.navMenu .menuHorizontal {
+}
+
+.navMenu .menuHorizontal ul {
+}
+
+.navMenu .menuHorizontal a {
+}
+
+.navMenu .menuHorizontal li {
+}
+
+.navMenu .menuHorizontal li ul {
+}
+
+.navMenu .menuHorizontal li ul li {
+}
+
+.navMenu .menuHorizontal li ul li a, .navMenu .menuHorizontal li ul li ul li a {
+}
+
+.navMenu .menuHorizontal li ul li ul {
+}
+
+.navMenu .menuHorizontal li.menuBranch {
+}
+
+.navMenu .menuHorizontal li.menuLeaf a {
+}
+
+.navMenu .menuHorizontal li:hover a, .navMenu .menuHorizontal li.menuHover a {
+}
+
+.navMenu .menuHorizontal li ul li:hover a, .navMenu .menuHorizontal li ul li ul li:hover a {
+}
+
+.navMenu .menuHorizontal li ul, .navMenu .menuHorizontal li:hover ul ul, .navMenu .menuHorizontal li.menuHover ul ul {
+}
+
+.navMenu .menuHorizontal li:hover ul, .navMenu .menuHorizontal li li:hover ul, .navMenu .menuHorizontal li.menuHover ul {
+}
+
+/* Login Module Styling;
+ -----------------------------------------------------------------------*/
+.loginModule {
+}
+
+/* Site Wide Headers
+ -----------------------------------------------------------------------*/
+.contentPaneOuter .titleDescription {
+    background: #fff;
+}
+
+/* Module Specific Styling
+ -----------------------------------------------------------------------
+ -----------------------------------------------------------------------*/
+/* Advertisement Module
+ -----------------------------------------------------------------------*/
+.twoColumnLayout .leftSidebarOuter .container .adContainer .defaultContainerHeader {
+}
+
+.container .defaultContainer.adContainer .defaultContainerHeader h3 {
+    color: #999;
+    font-size: 10px;
+    margin: 0;
+    padding: 0 10px;
+    font-weight: normal;
+    background: #fff;
+}
+
+.twoColumnLayout .leftSidebarOuter .container .defaultContainer.adContainer .defaultContainerHeader {
+    margin-bottom: 0;
+}
+
+.twoColumnLayout .leftSidebarOuter .container .defaultContainer.adContainer .defaultContainerContent {
+    padding: 0 10px;
+}
+
+/* Articles Module
+ -----------------------------------------------------------------------*/
+.articleModule {
+}
+
+.articleModule .message {
+}
+
+.articleModule .bodyText 
+{
+	
+}
+
+.articleModule .rightAlign
+{
+	float: right;	
+}
+
+.articleModule .textBorder
+{
+	border-style:solid;	
+	border-width:thick;
+	border-color:blue;
+}
+
+.articleModule .paging {
+}
+
+.articleModule .sectionTitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 100%;
+    color: #333;
+}
+
+.articleModule .section {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 150%;
+    color: #333;
+}
+
+.articleModule .articleRatingHeader {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #333;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.articleModule .articleRating {
+    width: 83px;
+    height: 23px;
+    margin: 5px;
+}
+
+.articleModule .commentLink {
+}
+
+.articleModule .articleTitle {
+}
+
+.articleModule .articleType {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a4180;
+    margin: 0px 0px 3px 0px;
+}
+
+.articleModule .date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #333;
+}
+
+.articleModule .articleTitleImage {
+}
+
+/* hide dropdown list for filtering articles */
+.articleModule .filtering {
+    display: none;
+}
+
+/* hide generic titles for all articles  */
+.articleModule .articleList .articleListHeaderRow {
+    display: none;
+}
+
+.articleModule .articleList .articleListHeaderRow a {
+}
+
+.articleModule .articleList .articleListHeaderTitle {
+}
+
+.articleModule .articleList .articleListHeaderCreated {
+}
+
+.articleModule .articleList .articleListRow {
+}
+
+.articleModule .articleList .articleListTitle {
+    font-size: 17px;
+    text-align: left;
+    list-style: none;
+    color: #1a4180;
+    font-weight: normal;
+}
+
+.articleModule .articleList .articleListCreated {
+    display: block;
+    font-size: 10px;
+    color: #666;
+    padding: 2px 0 8px 12px;
+    border: 0;
+    margin: 0;
+}
+
+.articleModule .articleList .articleListType
+{
+	display:block;
+}
+
+/*comments*/
+.commentModule {
+    padding-top: 20px;
+}
+
+.commentModule .comment {
+    width: 560px;
+    padding-bottom: 20px;
+}
+
+.commentModule .commentTree {
+    padding-left: 20px;
+}
+
+.commentModule .comment .commentUser {
+    width: 70px;
+    float: left;
+    background-image: url('../Images/bcgrdCommentArrow.gif');
+    background-position: 100% -4px;
+    background-repeat: no-repeat;
+    padding-top: 10px;
+}
+
+.commentModule .comment .commentUser span {
+    display: block;
+}
+
+.commentModule .comment .commentText {
+    width: 355px;
+    background-color: #d6e0ee;
+    padding: 28px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333;
+    float: left;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.commentModule .comment .commentText .replyITo {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.commentModule .comment .commentAction {
+    width: 105px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333;
+    float: right;
+    text-align: left;
+    padding-left: 5px;
+    vertical-align: top;
+}
+
+.commentModule .comment .commentAction a {
+    color: #2782d1;
+    font-size: 10px;
+    text-decoration: none;
+    margin: 0px;
+    display: block;
+    padding: 3px;
+    margin: 4px 0;
+}
+
+.commentModule .comment .commentAction a:hover {
+    text-decoration: underline;
+}
+
+.commentModule .comment .commentUser .name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.commentModule .comment .commentUser .date, .commentModule .comment .commentUser .time {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #333;
+}
+
+.articleModule .commentUser {
+}
+
+.articleModule .commentText {
+}
+
+.articleModule .commentAction {
+}
+
+.articleModule .ViewCommentLink {
+   
+}
+
+/* Add Comments Module
+ -----------------------------------------------------------------------*/
+/* Uncomment when article comments along the bottom work */
+.ArticleDetail .twoColumnLayout .contentPaneOuter .container {
+    background: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.addCommentContainer {
+}
+
+.twoColumnLayout .contentPaneOuter .container .addCommentContainer .defaultContainerHeader {
+    background: #D6E0EE;
+    margin: 0;
+    padding: 0px;
+}
+
+.twoColumnLayout .contentPaneOuter .container .addCommentContainer .defaultContainerHeader h3 {
+    background: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #294e88;
+    margin: 0px;
+    padding: 10px 0px 10px 20px;
+}
+
+.twoColumnLayout .contentPaneOuter .container .addCommentContainer .defaultContainerContent {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.addCommentContainer .addCommentModule {
+    background: #D6E0EE url(../Images/bcgrdArticleComment.gif) 0 100% no-repeat;
+    margin: 0px;
+    padding: 0px 20px 10px 20px;
+}
+
+.addCommentModule .email {
+    padding: 10px 0px 10px 0px;
+    float: right
+}
+
+.addCommentModule input.textbox {
+    float: left;
+    width: 160px;
+}
+
+.addCommentModule .name {
+    padding: 10px 0px;
+    float: left
+}
+
+.addCommentModule .commentText {
+    padding: 10px 0px 10px 0px;
+}
+
+.addCommentModule .formInputLable {
+    display: block;
+    float: left;
+    width: 90px;
+    padding-top: 5px;
+}
+
+.addCommentModule .message {
+    margin: 0px;
+    height: 80px;
+    width: 450px;
+    float: left;
+}
+
+.addCommentModule .errorMessage {
+    float: left;
+}
+
+.addCommentModule .buttonSection {
+    clear: both;
+    padding-top: 20px;
+}
+
+.addCommentModule .buttonSection input.button {
+    width: 88px;
+    background-position: 0 -44px;
+    float: left;
+    margin-top: 5px;
+}
+
+.addCommentModule .buttonSection input.button:hover {
+    background-position: 0 -66px;
+}
+
+.addCommentModule .buttonSection input.button.postCommentsButton {
+    margin: 0px 20px 0 90px;
+    width: 158px;
+    height: 32px;
+    background-position: 0 -88px;
+}
+
+.addCommentModule .buttonSection input.button.postCommentsButton:hover {
+    background-position: 0 -120px;
+}
+
+/* Search Result Module
+ -----------------------------------------------------------------------*/
+.container .searchResultContainer {
+}
+
+.container .searchResultContainerContent {
+}
+
+.container .searchResultContainerHeader {
+}
+
+.container .searchResultContainer h3 {
+}
+
+/* Directory Module
+ -----------------------------------------------------------------------*/
+.directoryModule ul, .directoryModule ul li {
+    line-height: 1.1em;
+}
+
+.directoryModule ul.column1 {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 270px;
+    padding: 0;
+}
+
+.directoryModule ul.column2 {
+    float: right;
+    margin: 0;
+    width: 270px;
+    padding: 0;
+}
+
+.directoryModule ul li {
+    font-size: 17px;
+    text-align: left;
+    list-style: none;
+    color: #1a4180;
+    font-weight: normal;
+}
+
+.directoryModule ul li ul {
+    padding: 3px 0 0 8px;
+    border-top: 0;
+    margin-left: 0;
+    margin-top: 0;
+    list-style: none;
+}
+
+.directoryModule ul li ul li {
+    font-size: 12px;
+    color: #454545;
+    display: inline;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    line-height: 1.4em;
+}
+
+.directoryModule ul li ul li a {
+    color: #454545;
+    text-decoration: none;
+    line-height: 1.4em;
+}
+
+.directoryModule ul li ul li a:after {
+    content: ""
+}
+
+.directoryModule ul li ul li a:hover {
+    color: #454545;
+    text-decoration: underline;
+}
+
+/* /* Product Diretory Jump Page specific rules
+ -----------------------------------------------------------------------*/
+.ProductDirectoryBranch .directoryModule ul li {
+    font-size: 12px;
+    text-align: left;
+    font-weight: bold;
+    list-style: none;
+    color: #194681;
+    font-weight: normal;
+    margin: 12px 0 12px 0;
+    line-height: 1.1em;
+}
+
+.ProductDirectoryBranch .directoryModule ul li ul li a:after {
+    content: none;
+}
+
+.ProductDirectoryBranch .directoryModule ul li ul {
+    padding: 0;
+    border-top: 0;
+    margin-left: 0;
+    margin-top: 0;
+    list-style: none;
+    line-height: 1.1em;
+}
+
+.ProductDirectoryBranch .directoryModule ul li ul li a {
+    font-size: 12px;
+    color: #454545;
+    display: block;
+    padding: 0;
+    border: 0;
+    margin: 8px 0 8px 0;
+}
+
+.ProductDirectoryBranch .directoryModule ul li {
+    padding: 0 0 4px 0;
+}
+
+.ProductDirectoryBranch .directoryModule ul li ul li {
+}
+
+.ProductDirectoryBranch .directoryModule ul li a {
+    color: #194681;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ProductDirectoryBranch .directoryModule ul li ul li a {
+    color: #2782d1;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.ProductDirectoryBranch .directoryModule ul li ul li a:hover {
+    color: #2782d1;
+    text-decoration: underline;
+    font-weight: normal;
+}
+
+/* Lead Module
+ -----------------------------------------------------------------------*/
+.LeadForm .leadVendorMessage
+{
+	display:none;
+}
+.LeadForm .breadcrumb {
+    display: none;
+}
+
+.LeadForm .singleColumnLayout .contentPaneOuter {
+    margin-top: 10px;
+}
+
+.leadModule {
+    width: 620px;
+    margin: 0 auto;
+}
+
+.leadModule .customText {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.leadModule .row {
+    padding: 5px 10px 5px 20px;
+    border-right: solid 3px #eee;
+    border-left: solid 3px #eee;
+}
+
+.leadModule .row.last {
+    border-bottom: solid 3px #eee;
+}
+
+.leadModule .row.alternate {
+    background: #eee;
+}
+
+.leadModule .text {
+    display: block;
+    width: 236px;
+    padding-right: 10px;
+    height: 28px;
+    line-height: 28px;
+    float: left;
+}
+
+.leadModule .control {
+    display: block;
+    float: left;
+    width: 338px;
+}
+
+.leadModule .control span {
+    width: 10px;
+    display: block;
+    float: right;
+    margin-top: 5px;
+}
+
+.leadModule .control .textbox {
+    width: 314px;
+    float: left;
+}
+
+.leadModule .control select.dropdownList {
+    width: 326px;
+    display: block;
+    margin: 5px 0 0 0;
+    float: left;
+}
+
+.leadSubmit {
+    width: 158px;
+    margin: 0 auto;
+}
+
+.leadSubmit input.button, input.postCommentsButton {
+    width: 158px;
+    height: 32px;
+    background-position: 0 -88px;
+}
+
+.leadSubmit input.button:hover, input.postCommentsButton:hover {
+    background-position: 0 -120px;
+}
+
+.leadModule .thankYou {
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a4180;
+    margin-bottom: 10px;
+}
+
+.leadModule .information {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.leadModule .dataGrid {
+    background: #eee;
+    width: 100%;
+}
+
+.leadModule .dataGrid td, .leadModule .dataGrid th {
+    padding: 10px;
+    border: solid 3px #fff;
+}
+
+.leadModule .dataGrid th {
+    background: #ddd;
+}
+
+.leadModule .vendor {
+}
+
+.leadModule .product {
+}
+
+.LeadForm .errorMessage {
+    width: 600px;
+    margin: 5px auto;
+    display: block;
+}
+
+.leadModule .leadSubmit {
+}
+
+/* Matrix Module
+ -----------------------------------------------------------------------*/
+.matrixModule {
+}
+
+.matrixModule .requestInfoAllButton {
+    width: 158px;
+    height: 32px;
+    background-position: 0 -88px;
+}
+
+.matrixModule .requestInfoAllButton:hover {
+    background-position: 0 -120px;
+}
+
+.matrixModule table {
+    clear: both;
+    width: 100%;
+}
+
+.matrixModule table th, .matrixModule table td {
+    border: solid 2px #fff;
+    padding: 5px;
+}
+
+.matrixModule table td {
+}
+
+.matrixModule table th {
+}
+
+.matrixModule table th.dataGridHeader {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.matrixModule table th.dataGridHeader a {
+    color: #1A4180;
+    text-decoration: underline;
+}
+
+.matrixModule table th.dataGridHeader a:hover {
+    text-decoration: none;
+}
+
+.matrixModule .featuredRow {
+}
+
+.matrixModule .standardRow {
+}
+
+.matrixModule .minimizedRow {
+}
+
+.matrixModule .alternate {
+    background: #eee;
+}
+
+.matrixModule .requestInfoAllButton {
+}
+
+.matrixModule .checkBoxColumn {
+    border-right: none;
+    padding: 5px 5px 5px 5px;
+    width: 20px;
+}
+
+.matrixModule .categoryMatrixModule {
+}
+
+.matrixModule .categoryMatrixModule .categoryColumn {
+}
+
+.matrixModule .categoryMatrixModule .specificationColumn {
+}
+
+.matrixModule .categoryMatrixModule .informationColumn {
+}
+
+.matrixModule .horizontalMatrixModule {
+}
+
+.matrixModule .horizontalMatrixModule .specificationTypes {
+    font-weight: bold;
+    width: 200px;
+}
+
+.matrixModule .horizontalMatrixModule .productColumn {
+}
+
+.matrixModule .horizontalMatrixModule .productLink {
+}
+
+.matrixModule .horizontalMatrixModule .vendorPriceTitle {
+}
+
+.matrixModule .horizontalMatrixModule .vendorLogo .vendorImage {
+    border: solid 1px #ddd;
+}
+
+.matrixModule .verticalMatrixModule .vendorSelectionList {
+}
+
+.matrixModule .verticalMatrixModule .filterByVendorTitle {
+}
+
+.matrixModule .verticalMatrixModule .vendorSelectionEntry {
+}
+
+.matrixModule .verticalMatrixModule .functionLinkPanel {
+}
+
+.matrixModule .verticalMatrixModule .functionLink {
+}
+
+.matrixModule .verticalMatrixModule .functionButtonPanel {
+}
+
+.matrixModule .verticalMatrixModule .pager {
+}
+
+.matrixModule .verticalMatrixModule .productList {
+}
+
+.matrixModule .verticalMatrixModule .requestInfoAllButton {
+}
+
+.matrixModule .verticalMatrixModule .compareButton {
+}
+
+.productDetailModule .requestInfo {
+}
+
+.matrixModule .verticalMatrixModule .pager a {
+}
+
+.matrixModule .verticalMatrixModule .pager a:hover {
+}
+
+.matrixModule .verticalMatrixModule .productColumn {
+    width: 250px;
+}
+
+.matrixModule .verticalMatrixModule .productColumn a {
+    font-weight: bold;
+}
+
+.matrixModule .priceColumn .button {
+}
+
+.matrixModule .verticalMatrixModule .checkBoxColumn {
+}
+
+.matrixModule .verticalMatrixModule .specificationColumn {
+    font-size: 11px;
+}
+
+.matrixModule .verticalMatrixModule .specificationColumn a {
+    font-size: 12px;
+}
+
+.matrixModule .verticalMatrixModule .priceColumn {
+    width: 100px;
+}
+
+.matrixModule .verticalMatrixModule .companyColumn {
+}
+
+.matrixModule .verticalMatrixModule .manufacturer {
+}
+
+.matrixModule .vendorMatrixModule .nameColumn {
+}
+
+.matrixModule .vendorMatrixModule .addressColumn {
+}
+
+.matrixModule .vendorMatrixModule .phoneColumn {
+}
+
+.functionLinkPanel {
+    height: 0;
+}
+
+.functionButtonPanel {
+    background: #e4ebf4;
+    padding: 10px 10px 10px 0;
+    margin-bottom: 10px;
+}
+
+.functionButtonPanel.last {
+    margin: 10px 0;
+}
+
+.functionButtonPanel .button {
+    float: right;
+    color: #2782D1;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    background-image: url(../Images/bcgrdActionButtons.gif);
+    background-color: transparent;
+}
+
+.functionButtonPanel .button:hover {
+    color: #288e33;
+}
+
+.functionButtonPanel .requestInfoAllButton {
+    background-position: 0 -60px;
+    width: 136px;
+    margin-right: 10px;
+}
+
+.functionButtonPanel .requestInfoAllButton:hover {
+    background-position: 0 -82px;
+}
+
+.functionButtonPanel .requestSelectedInfoButton {
+    background-position: 0 -210px;
+    width: 105px;
+    margin-right: 10px;
+}
+
+.functionButtonPanel .requestSelectedInfoButton:hover {
+    background-position: 0 -232px;
+}
+
+.functionButtonPanel .button.compareButton {
+    background-position: 0 0;
+    height: 30px;
+    width: 115px;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.functionButtonPanel .button.compareButton:hover {
+    background-position: 0 -30px;
+}
+
+.functionButtonPanel.last .button.compareButton {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-top: 8px;
+    margin-top: -8px;
+    background-position: 0 -150px;
+}
+
+.functionButtonPanel.last .button.compareButton:hover {
+    background-position: 0 -180px;
+}
+
+.functionButtonPanel .button.selectButton {
+    width: 80px;
+    background-position: 0 -104px;
+    margin-right: 10px;
+}
+
+.functionButtonPanel .button.selectButton:hover {
+    background-position: 0 -126px;
+    color: #288e33;
+    text-decoration: none;
+}
+
+.functionButtonPanel h5 {
+    display: none;
+}
+
+.matrixModule .otherVendors table tr {
+    background: #eee;
+}
+
+.matrixModule .otherVendors table tr.alternatingRow {
+    background: #fff;
+}
+
+.matrixModule .otherVendors table tr td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.matrixModule .otherVendors .productName {
+    display: block;
+}
+
+.matrixModule .otherVendors a.companyName {
+    color: #222;
+    font-weight: normal;
+}
+
+.matrixModule .otherVendors table td.productInfo {
+    border-right: none;
+}
+
+/* Contact Info
+ -----------------------------------------------------------------------*/
+.contactInfo h1.companyName {
+    display: none;
+}
+
+.contactInfo {
+    padding: 15px 15px 30px 15px;
+}
+
+.contactInfo .vcard {
+    float: left;
+    width: 350px;
+    line-height: 1.5em;
+    font-size: 13px;
+}
+
+.contactInfo .vcard h5 {
+    font-size: 1.3em;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.contactInfo .vcard p {
+    display: none;
+}
+
+.contactInfo div {
+    line-height: 1.5em;
+}
+
+.contactInfo .vendorImage {
+    float: right;
+}
+
+.contactInfo .vcard a {
+}
+
+.contactInfo .vcard a:hover {
+}
+
+.twoColumnLayout .contentPaneOuter .container .vendorProducts {
+}
+
+.vendorProducts {
+    background: #e4ebf4;
+    padding: 15px;
+}
+
+.vendorProducts h3 {
+    margin-top: 5px;
+}
+
+.vendorProducts .column1, .vendorProducts .column2 {
+    width: 220px;
+    margin-left: 0;
+    float: left;
+}
+
+.vendorProducts .column1 {
+    margin-right: 20px;
+}
+
+/* Product Detail Module
+ -----------------------------------------------------------------------*/
+/* float content in header *****************************************/
+/* wrap text in header */
+.ProductDetail .contentPaneOuter h1 {
+    padding-right: 150px;
+}
+
+.ProductDetail.withImage .contentPaneOuter h1 {
+    padding-right: 300px;
+    min-height: 100px;
+}
+
+/* product image to right of rapped text */
+.ProductDetail .productDetailModule .productDetailHeader {
+    height: 0;
+}
+
+.ProductDetail .productDetailModule .productDetailHeader .productDetailHeaderImage {
+    display: block;
+    position: relative;
+    height: 100px;
+    top: -138px;
+    right: -460px;
+    width: 134px;
+}
+
+/* request button to right of product image */
+.ProductDetail .productDetailModule a.requestInfo {
+    display: block;
+    font-size: 11px;
+    line-height: 20px;
+    background: transparent url(../Images/bcgrdInputButtons.gif) 0 0px;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    height: 22px;
+    cursor: pointer;
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+.ProductDetail .productDetailModule a.requestInfo:hover {
+    background-position: 0 -22px;
+    text-decoration: none;
+}
+
+.ProductDetail .productDetailModule .productDetailTable span.requestInfo a.requestInfo {
+    position: static;
+}
+
+.ProductDetail .productDetailModule .productDetailTable span.requestInfo {
+    height: auto;
+}
+
+.ProductDetail .productDetailModule span.requestInfo a.requestInfo {
+    position: relative;
+    top: -58px;
+    right: -640px;
+}
+
+.ProductDetail .productDetailModule span.requestInfo {
+    height: 0;
+    display: block;
+}
+
+.productDetailModule .tagControl {
+}
+
+.productDetailModule table.productDetailTable {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+    width: 100%;
+}
+
+.productDetailModule .productDetailTable th, .productDetailModule table.productDetailTable td {
+    padding: 10px;
+}
+
+.ProductDetail .productDetailModule .productDetailTable .requestInfo a.requestInfo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    line-height: 20px;
+    background: transparent url(../Images/bcgrdInputButtons.gif) 0 0px;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    height: 22px;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+    border: none;
+    margin: 0;
+}
+
+.ProductDetail .productDetailModule .productDetailTable {
+    position: relative;
+    right: 0px;
+}
+
+.ProductDetail .productDetailModule .productDetailTable .requestInfo a.requestInfo.requestInfo:hover {
+    background-position: 0 -22px;
+    text-decoration: none;
+}
+
+.ProductDetail tr.productDetailSectionHeader {
+}
+
+.ProductDetail tr.productDetailSectionHeader th {
+    font-size: 14px; /* comped at 12 */
+    font-weight: bold;
+    color: #1a4180;
+}
+
+.ProductDetail tr.productDetailSectionHeader th {
+    padding-top: 20px;
+    border-top: solid 3px #eee;
+}
+
+.ProductDetail tr.productDetailSectionHeader.first th {
+    border-top: none;
+    padding-top: none;
+}
+
+.productDetailModule table.productDetailTable th {
+    border-right: solid 2px #fff;
+}
+
+.productDetailModule table.productDetailTable td, .productDetailModule table.productDetailTable th {
+}
+
+.productDetailModule table.productDetailTable tr.productDetailSectionHeader th {
+}
+
+.productDetailModule table.productDetailTable tr.productDetailSpecRow {
+    background: #eee;
+}
+
+.productDetailModule table.productDetailTable tr.productDetailSpecRow.alternatingRow {
+    background: #fff;
+}
+
+.productDetailModule .productDetailSpecRow .vendorImage {
+    float: right;
+}
+
+.productDetailModule .productDetailSpecRow .contactInfo {
+    float: left;
+}
+
+.productDetailModule tr.productDetailSpecRow th {
+    width: 180px;
+}
+
+.productDetailModule tr.productDetailSpecRow td {
+}
+
+.productDetailModule table.productDetailTable td {
+}
+
+.productDetailModule div.productDetailHeader {
+}
+
+.productDetailModule span.productDetailHeaderImage {
+}
+
+.productDetailModule span.productDetailHeaderMoreInforButton {
+}
+
+/* Search Result Module
+ -----------------------------------------------------------------------*/
+.searchResultsModule {
+}
+
+/* Static HTML Module
+ -----------------------------------------------------------------------*/
+.staticHtmlModule {
+}
+
+/* Tag Search Module
+ -----------------------------------------------------------------------*/
+.tagSearchModule {
+}
+
+.tagSearchModule .searchContentHeader {
+}
+
+.tagSearchModule .searchContent {
+}
+
+/* User Module
+ -----------------------------------------------------------------------*/
+.userModule {
+    padding: 5px;
+    text-align: left;
+}
+
+.userModule td {
+    padding: 5px;
+}
+
+.userModule table {
+    width: 240px;
+    margin: 0 auto;
+}
+
+.userModule .createNewUser {
+}
+
+.userModule .createNewUser .row, .userModule .createNewUser .raw {
+    padding: 3px 10px;
+    width: 400px;
+}
+
+.userModule .createNewUser .errorMessage {
+    padding-left: 0;
+}
+
+.userModule .createNewUser .text {
+    width: 150px;
+    margin-right: 20px;
+    float: left;
+}
+
+.userModule .createNewUser .control {
+    width: 230px;
+    float: left;
+}
+
+.userModule .createNewUser .control .textbox {
+    width: 190px;
+}
+
+.userModule .createNewUser .control select {
+    width: 200px;
+}
+
+.userModule .controlButtons {
+    width: 370px;
+    padding: 20px 0;
+}
+
+.userModule .controlButtons .button {
+    float: right;
+    margin-left: 10px;
+}
+
+.userModule table .button {
+    float: right;
+    margin-left: 10px;
+}
+
+.userModule .userProfile .lable {
+}
+
+.userModule .userProfile .textbox {
+    width: 210px;
+}
+
+.userModule .userProfile .countryList {
+    height: 17px;
+    width: 85px;
+}
+
+.userModule .userProfile .salutation {
+    width: 50px;
+    height: 24px;
+}
+
+/* Login Module Styling;
+ -----------------------------------------------------------------------*/
+.loginModule div.login {
+    background: #D3E0EF;
+    padding: 10px;
+    width: 280px;
+    float: left;
+    height: 220px;
+}
+
+.loginModule div.forgotPassword {
+    width: 280px;
+    padding: 10px;
+    float: left;
+}
+
+.loginModule .login h4 {
+    margin-top: 0;
+}
+
+.loginModule span {
+    display: block;
+}
+
+.loginModule .forgotPasswordRow, .loginModule .loginRow {
+    padding: 4px 0;
+}
+
+.loginModule .forgotPasswordCol1, .loginModule .forgotPasswordCol2, .loginModule .loginCol1, .loginModule .loginCol2 {
+    float: left;
+}
+
+.loginModule .forgotPasswordCol1, .loginModule .loginCol1 {
+    width: 90px;
+    padding: 3px 10px 0 0;
+}
+
+.loginModule .button {
+    float: right;
+    margin: 10px 0 0 10px;
+}
+
+.loginModule .textbox {
+    width: 166px;
+}
+
+.loginModule .forgotPasswordHeader {
+    margin-bottom: 0.5em;
+    font-size: 1.16667em;
+    font-weight: bold;
+}
+
+.loginModule .forgotPasswordText {
+    line-height: 14px;
+    margin-bottom: 10px;
+}
+
+/* Site Wide Utilities
+ -----------------------------------------------------------------------
+ -----------------------------------------------------------------------*/
+/* Create New User
+ -----------------------------------------------------------------------*/
+.twoColumnLayout .createNewUser {
+    padding: 0;
+    vertical-align: bottom;
+}
+
+.twoColumnLayout .createNewUser div.Row {
+    padding-top: 2px;
+    width: auto;
+    height: 2em;
+    vertical-align: text-bottom;
+}
+
+.twoColumnLayout .createNewUser div span.Text {
+    width: 200px;
+    text-align: left;
+    vertical-align: text-bottom;
+    float: left;
+}
+
+.twoColumnLayout .createNewUser div span.Control {
+    float: left;
+    width: 500px;
+    vertical-align: text-bottom;
+}
+
+/* Tagging Styling
+ -----------------------------------------------------------------------*/
+.tagControl {
+    padding: 20px 0 15px 0;
+    position: relative;
+    margin-top: 15px;
+}
+
+.loggedIn .tagControl .title {
+    display: none;
+}
+
+.tagControl .title {
+    float: left;
+    padding: 0;
+    background: #999;
+    color: #fff;
+    padding: 5px 7px;
+    margin: 0 7px 0 0;
+    font-weight: bold;
+    line-height: 1em;
+    height: 13px;
+    overflow: hidden;
+}
+
+.loggedIn .tagControl .tagDisplay {
+    padding-top: 2px;
+}
+
+.tagControl .tagDisplay {
+    float: left;
+    padding: 0px 0;
+}
+
+.tagControl .tagDisplay ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tagControl .tagDisplay ul li {
+    display: block;
+    float: left;
+    padding: 0 5px 0 0;
+}
+
+.tagControl .input .textbox {
+}
+
+.tagControl .input .button {
+}
+
+.tagControl .display {
+}
+
+.tagControl .tagLink {
+    background: #e4ebf4;
+    display: block;
+    float: left;
+    padding: 5px;
+    color: #444;
+    height: 13px;
+    overflow: hidden;
+}
+
+.tagControl .tagLink:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #1a4180;
+}
+
+.loggedIn .tagControl #tagAdd {
+    background: url(../Images/bcgrdAddTag.gif);
+    width: 230px;
+    height: 27px;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+}
+
+.tagControl #tagAdd {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    height: 15px;
+    font-weight: bold;
+}
+
+.tagControl #tagAdd input.textbox {
+    background: none;
+    border: none;
+    padding: none;
+    position: absolute;
+    left: 2px;
+}
+
+.tagControl #tagAdd input.button {
+    background: none;
+    width: 70px;
+    height: 27px;
+    position: absolute;
+    right: 0;
+}
+
+.tagControl #tagAdd input.button:hover {
+    color: #1A4180;
+}
+
+/* Home Page - Featured Article
+ -----------------------------------------------------------------------*/
+.featuredArticleContainer .content {
+    width: 345px;
+    float: left;
+}
+
+.featuredArticleContainer .image {
+    width: 195px;
+    float: right;
+}
+
+.featuredArticleContainer .image img {
+}
+
+.featuredArticleContainer h4 {
+    margin-top: 0;
+    color: #1A4180;
+    font-size: 14px;
+}
+
+.featuredArticleContainer p.date {
+    margin: 0 0 4px 0;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.featuredArticleContainer a.readMore {
+    display: block;
+    font-weight: bold;
+}
+
+.featuredArticleContainer p.description {
+    margin-bottom: 10px;
+}
+
+/* Forum
+ -----------------------------------------------------------------------*/
+.forumTopic {
+}
+
+.forumTopic .forumTopicRowHeader {
+}
+
+.forumTopic .forumTopicRowHeader .forumTopicTitleHeader {
+}
+
+.forumTopic .forumTopicRowHeader .forumTopicDescriptionHeader {
+}
+
+.forumTopic .forumTopicRowHeader .forumTopicThreadsHeader {
+}
+
+.forumTopic .forumTopicThreadsHeader .forumTopicTimeStampHeader {
+}
+
+.forumTopic .forumTopicRow {
+}
+
+.forumTopic .forumTopicRow .forumTopicTitle {
+}
+
+.forumTopic .forumTopicRow .forumTopicDescription {
+}
+
+.forumTopic .forumTopicRow .forumTopicThreads {
+}
+
+.forumTopic .forumTopicRow .forumTopicTimeStamp {
+}
+
+.suggestForumTopic {
+}
+
+.suggessionText {
+}
+
+.suggestionButton {
+}
+
+.forumThread {
+}
+
+.forumThread .newThread {
+}
+
+.forumThread .forumThreadRowHeader {
+}
+
+.forumThread .forumThreadRowHeader .forumThreadTitleHeader {
+}
+
+.forumThread .forumThreadRowHeader .forumThreadPostsHeader {
+}
+
+.forumThread .forumThreadRowHeader .forumThreadOwnerHeader {
+}
+
+.forumThread forumThreadRowHeader .forumThreadTimeStampHeader {
+}
+
+.forumThread .forumThreadRow {
+}
+
+.forumThread .forumThreadRow .forumThreadTitle {
+}
+
+.forumThread .forumThreadRow .forumThreadPosts {
+}
+
+.forumThread .forumThreadRow .forumThreadOwner {
+}
+
+.forumThread .forumThreadRow .forumThreadTimeStamp {
+}
+
+.forumThreadPostList {
+}
+
+.forumThreadPostList .newPost {
+}
+
+.forumThreadPostList .topicsPage {
+}
+
+.forumThreadPostList .threadsPage {
+}
+
+.forumThreadPostList .threadPost {
+}
+
+.forumThreadPostList .threadPost .post {
+}
+
+.forumThreadPostList .threadPost .timeStamp {
+}
+
+.forumThreadPostList .threadPost .userName {
+}
+
+.forumThreadPostList .threadPost .noOfPosts {
+}
+
+.forumThreadPostList .threadPost .registeredDate {
+}
+
+.forumThreadPostList .threadPost .reply {
+}
+
+.forumThreadPostList .threadPost .reportAbuse {
+}
+
+.forumThreadPostList .threadPost .detail {
+}
+
+.abuseButton {
+}
+
+.forumThreadPost {
+}
+
+.forumThreadPost .postRow {
+}
+
+.forumThreadPost .postRow .postTitle {
+}
+
+.forumThreadPost .postRow .postText {
+}
+
+.forumPostSubject {
+}
+
+.forumPostBody {
+}
+
+.forumPostSave {
+}
+
+.forumPostCancel {
+}
+
+/* Search Category
+ -----------------------------------------------------------------------*/
+.searchPanelModule {
+}
+
+.searchPanelModule .browseLink {
+}
+
+.searchPanelModule .browseLink:hover {
+}
+
+.searchPanelModule .button {
+}
+
+.searchPanelModule .optionSelection {
+}
+
+.searchPanelModule .groupLabel {
+}
+
+.searchPanelModule .optionDropDownCell {
+}
+
+.searchPanelModule .optionDropDown {
+}
+
+.forumThreadPostDetail {
+}
+
+.forumThreadPostDetail .post {
+}
+
+.forumThreadPostDetail .back {
+}
+
+.optionListModule .optionList ul {
+}
+
+.optionListModule .optionList ul li {
+}
+
+.optionListModule .optionListPager {
+}
+
+/* User Profile
+ -----------------------------------------------------------------------*/
+.userProfile div .row 
+{
+	float:left;
+	width:100%;
+	padding: 5px 10px 5px 20px;
+    border-right: solid 3px #eee;
+    border-left: solid 3px #eee;
+}
+
+.userProfile div
+{
+	width:100%;	
+}
+
+.userProfile div .row .text 
+{
+	float:left;
+	width:30%;
+}
+
+.userProfile div .row .control 
+{
+	float:left;
+	width:50%;
+}
+
+/*jBreadCrumb*/
+/* Breadcrumb Styles
+ ---------------------------------------------------------------------*/
+/* Breadcrumb positioning */
+.Home .pageHeaderOuter .breadcrumb {
+    display: none;
+}
+
+.pageHeaderOuter .breadcrumb {
+    position: absolute;
+    top: 153px;
+    background: url('../Images/bcgrdBreadCrumb.gif') no-repeat;
+    height: 24px;
+    padding: 3px 10px;
+    overflow: hidden;
+}
+
+.twoColumnLayout .pageHeaderOuter .breadcrumb {
+    width: 600px;
+    background-position: 0 -60px;
+}
+
+.VerticalMatrix .pageHeaderOuter .breadcrumb, .ProductDetail .pageHeaderOuter .breadcrumb {
+    width: 766px;
+    background-position: 0 -30px;
+}
+
+.singleColumnLayout .pageHeaderOuter .breadcrumb {
+    width: 966px;
+}
+
+.breadcrumbMap {
+    margin: 0;
+    padding: 0;
+    float: left;
+    display: block;
+    height: 21px;
+    overflow: hidden;
+    padding: 2px 5px 2px 2px;
+}
+
+.breadcrumbMap ul {
+    margin: 0;
+    padding: 0;
+    height: 21px;
+    display: block;
+}
+
+.breadcrumbMap ul li {
+    display: block;
+    float: left;
+    position: relative;
+    height: 21px;
+    overflow: hidden;
+    line-height: 21px;
+    margin: 0px 6px 0px 0;
+    padding: 0px 10px 0px 0;
+    font-size: 1em;
+    background: url(../Images/Chevron.gif) no-repeat 100% 0;
+}
+
+.breadcrumbMap ul li div.chevronOverlay {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.breadcrumbMap ul li span {
+    display: block;
+    overflow: hidden;
+}
+
+.breadcrumbMap ul li a {
+    display: block;
+    position: relative;
+    height: 21px;
+    line-height: 21px;
+    overflow: hidden;
+    float: left;
+    color: #1a4180;
+}
+
+.breadcrumbMap ul li.first a {
+    height: 16px !important;
+    text-indent: -1000em;
+    width: 16px;
+    padding: 0;
+    margin-top: 2px;
+    overflow: hidden;
+    background: url(../Images/icoHome.gif) no-repeat 0 0;
+}
+
+.breadcrumbMap ul li.first a:hover {
+    background-position: 0 -16px;
+}
+
+.breadcrumbMap ul li.last {
+    background: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.chevronOverlay {
+    display: none;
+    background: url(../Images/ChevronOverlay.png) no-repeat 100% 0;
+    width: 13px;
+    height: 20px;
+}
+
+.directoryModuleBack {
+    width: 100%;
+    display: none;
+}
+
+.footer h4 {
+    font-size: 1em;
+    margin: 0 0 5px 0;
+    text-align: center;
+    color: #222;
+}
+
+.footer ul {
+    margin: 0 0 8px 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer ul li {
+    border-right: 1px solid #BBBBBB;
+    display: inline !important;
+    height: 12px;
+    line-height: 12px;
+    margin: 0 2px 3px 0;
+    padding: 0 5px 0 5px;
+    text-align: left;
+}
+
+.footer ul li.last {
+    border-right: none;
+}
+
+.footer p {
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+}
+
+/* Clearfixes
+ ---------------------------------------------------------------------*/
+.module:after, .row:after, .functionButtonPanel:after, .addCommentModule .buttonSection:after, .loginModule:after, .loginRow:after, .forgotPasswordRow:after, .commentModule .comment:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* float clearing for IE7 */ * + html .module, * + html .row, * + html .functionButtonPanel, * + html .addCommentModule .buttonSection, * + html .loginModule, * + html .loginRow, * + html .forgotPasswordRow, * + html .commentModule .comment {
+    min-height: 1%;
+}
+
+/* float clearing for IE6 */ * html .module, * html .row, * html .functionButtonPanel, * html .addCommentModule .buttonSection, * html .loginModule, * html .loginRow, * html .forgotPasswordRow, * html .commentModule .comment {
+    height: 1%;
+    overflow: visible;
+}
+
+.getQuoteButton
+{
+	display: block;
+	width: 100px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #fff;
+	background: url(../Images/Background_GetQuote.gif) no-repeat 0 0;
+	border: 0;
+}
+
+.leadFormProductListItem
+{
+
+}
+
+.leadFormProductListItem .productCol
+{
+	float:left;
+	width :80%;
+}
+
+.leadFormProductListItem .checkboxCol
+{
+	float:left;
+}
+
+.artcleToolList
+{
+	display:inline;
+	list-style-type:none;
+	padding-left:20px;
+}
+
+/*Pager control styles */
+
+.pagingHolder .pageTitle
+{
+	float:left;
+}
+
+.pagingHolder ul li
+{
+	padding:10px;
+	float:left;
+}
+
+.pagingHolder ul
+{
+	list-style:none;
+}
+
+.pagingHolder ul li a
+{
+	text-decoration: underline;
+}
+.articleListAuthor
+{
+	display:block;
+}
+
+.articleModule .section .formHolder 
+{
+	background:#FFFFFF none repeat scroll 0 0;
+	border:1px solid #CCCCCC;
+	margin:20px auto;
+	padding:20px;
+	text-align:left;
+	width:auto;
+}
+
+*:first-child+html .ui-tabs-nav{width:600px; float:left; margin-left:-5px; position:absolute;}
+*:first-child+html .ui-tabs-panel{ margin-top:40px;}
+*:first-child+html .contentPickerSite, *:first-child+html .contentPickerContentType, *:first-child+html .contentPickerArticleType{ background:#ffffff; border-bottom:none;}
+*:first-child+html .contentPickerSite h3, *:first-child+html .contentPickerContentType h3, *:first-child+html .contentPickerArticleType h3{padding-top:2px;}
+*:first-child+html .contentPickerPopUp{ overflow:hidden;}

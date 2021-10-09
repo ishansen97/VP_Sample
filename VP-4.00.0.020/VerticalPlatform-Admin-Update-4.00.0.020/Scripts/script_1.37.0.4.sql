@@ -1,0 +1,2 @@
+UPDATE guided_browse_to_search_group_to_search_option
+SET enabled = 1

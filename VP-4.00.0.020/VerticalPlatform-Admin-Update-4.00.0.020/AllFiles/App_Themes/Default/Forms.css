@@ -1,0 +1,512 @@
+
+/* Basic Form Layout
+  ---------------------------------------------------------------------*/
+.formHolder
+{
+	background:#fff;
+	border:1px solid #ccc;
+	margin:20px auto;
+	text-align:left;
+	width:600px;
+	padding:20px;
+}
+
+.formHolder ul
+{
+	font-size:100%;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+.formHolder li
+{
+	display:block;
+	margin:0;
+	padding:4px 5px 2px 9px;
+	position:relative;
+	width:61%;
+}
+
+.formHolder li:after
+{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
+
+* html .formHolder li
+{
+	height:1%;
+}
+
+* html .buttons
+{
+	height:1%;
+}
+
+* html .formHolder li div
+{
+	display:inline-block;
+}
+
+.formHolder li div.inputElements
+{
+	color:#444;
+	margin:0 4px 0 0;
+	padding:0 0 8px 0;
+}
+.formHolder li div.inputElements .oneColumn, .formHolder li div.inputElements .twoColumn
+{
+	padding:0 0 8px 0;
+}
+.formHolder li span
+{
+	color:#444;
+	float:left;
+	margin:0 4px 0 0;
+	padding:0 0 8px;
+}
+
+.formHolder li div.column1
+{
+	display:inline;
+	float:left;
+	width:48%;
+}
+
+.formHolder li div.column2
+{
+	display:inline;
+	float:right;
+	width:48%;
+}
+
+.formHolder li div.column1 .medium, .formHolder li div.column2 .medium
+{
+	width:100%;
+}
+
+.formHolder li div label
+{
+	clear:both;
+	color:#444;
+	display:block;
+	font-size:9px;
+	line-height:9px;
+	margin:0;
+	padding-top:3px;
+}
+
+.formHolder li span label
+{
+	clear:both;
+	color:#444;
+	display:block;
+	font-size:9px;
+	line-height:9px;
+	margin:0;
+	padding-top:3px;
+}
+
+.formHolder li .datepicker
+{
+	cursor:pointer !important;
+	float:left;
+	height:16px;
+	margin:.1em 5px 0 0;
+	padding:0;
+	width:16px;
+}
+
+.formDescription
+{
+	border-bottom:1px dotted #ccc;
+	clear:both;
+	display:inline-block;
+	margin:0 0 1em;
+}
+
+.formDescription[class]
+{
+	display:block;
+}
+
+.formDescription h2
+{
+	clear:left;
+	font-size:160%;
+	font-weight:400;
+	margin:0 0 3px;
+}
+
+.formDescription p
+{
+	font-size:95%;
+	line-height:130%;
+	margin:0 0 12px;
+}
+
+.formHolder hr
+{
+	display:none;
+}
+
+.formHolder li.sectionBreak
+{
+	border-top:1px dotted #ccc;
+	margin-top:9px;
+	padding-bottom:0;
+	padding-left:9px;
+	padding-top:13px;
+	width:97% !important;
+}
+
+.formHolder ul li.first
+{
+	border-top:none !important;
+	margin-top:0 !important;
+	padding-top:0 !important;
+}
+
+.formHolder .section_break h3
+{
+	line-height:130%;
+	margin:0 0 2px;
+}
+
+.formHolder .section_break p
+{
+	font-size:85%;
+
+	margin:0 0 10px;
+}
+
+/* Buttons
+  ---------------------------------------------------------------------*/
+
+.buttons input
+{
+	margin-right:5px;
+}
+
+/* Inputs and Labels
+  ---------------------------------------------------------------------*/
+label.description
+{
+	border:none;
+	color:#222;
+	display:block;
+	font-size:95%;
+	font-weight:700;
+	line-height:150%;
+	padding:0 0 1px;
+}
+
+
+input.text, input.textbox
+{
+	background:#fff;
+	border:solid 1px #aaa;
+	color:#333;
+	font-size:100%;
+	margin:0;
+	padding:4px 0;
+}
+
+input.file
+{
+	color:#333;
+	font-size:100%;
+	margin:0;
+	padding:2px 0;
+}
+
+
+select.select, select.dropdownList
+{
+	color:#333;
+	font-size:100%;
+	margin:1px 0;
+	padding:1px 0 0;
+	background:#fff;
+	border:solid 1px #aaa;
+}
+
+
+
+input.checkbox
+{
+	display:block;
+	height:13px;
+	line-height:1.4em;
+	margin:6px 0 0 3px;
+	width:13px;
+}
+
+input.radio
+{
+	display:block;
+	height:13px;
+	line-height:1.4em;
+	margin:6px 0 0 3px;
+	width:13px;
+}
+
+.formHolder li label.choice
+{
+	color:#444;
+	display:block;
+	font-size:100%;
+	line-height:1.4em;
+	margin:-1.55em 0 0 25px;
+	padding:4px 0 5px;
+	width:90%;
+}
+/* TODO --- Figure our selects */
+select.select[class]
+{
+	margin:0;
+	padding:1px 0;
+}
+
+*:first-child+html select.select[class]
+{
+	margin:1px 0;
+}
+
+.safari select.select
+{
+	font-size:120% !important;
+	margin-bottom:1px;
+}
+
+input.small
+{
+	width:25%;
+}
+
+select.small
+{
+	width:25%;
+}
+
+input.medium
+{
+	width:50%;
+}
+
+select.medium
+{
+	width:50%;
+}
+
+input.large
+{
+	width:100%;
+}
+
+select.large
+{
+	width:100%;
+}
+
+textarea.small
+{
+	height:5.5em;
+}
+
+textarea.medium
+{
+	height:10em;
+}
+
+textarea.large
+{
+	height:20em;
+}
+
+/* Errors
+  ---------------------------------------------------------------------*/
+#errorMessage
+{
+	background:#fff;
+	border:1px solid #DF0000;
+	margin-bottom:1em;
+	width:99%;
+}
+
+#errorMessage h3
+{
+	color:#DF0000;
+	font-size:125%;
+	margin:7px 0 5px;
+	padding:0;
+}
+
+#errorMessage p
+{
+	color:#000;
+	font-size:100%;
+	margin:0 0 .8em;
+}
+
+#errorMessage p strong
+{
+	background-color:#FFDFDF;
+	color:#DF0000;
+	padding:2px 3px;
+}
+
+.formHolder li.error
+{
+	background-color:#FFDFDF !important;
+	margin:3px 0;
+}
+
+.formHolder li.error label
+{
+	color:#DF0000 !important;
+}
+
+.formHolder p.error
+{
+	clear:both;
+	color:#DF0000;
+	font-size:10px;
+	font-weight:700;
+	margin:0 0 5px;
+}
+
+.formHolder .required
+{
+	color:red;
+	float:none;
+	font-weight:700;
+}
+
+/* Helper and Highlighted
+  ---------------------------------------------------------------------*/
+.formHolder li.highlighted
+{
+	background-color:#fff7c0;
+}
+
+.formHolder .helper
+{
+	background:#f5f5f5;
+	border:1px solid #e6e6e6;
+	color:#444;
+	font-size:80%;
+	left:100%;
+	line-height:130%;
+	margin:0 0 0 8px;
+	padding:8px 10px 9px;
+	position:absolute;
+	top:0;
+	visibility:hidden;
+	width:42%;
+	z-index:1000;
+}
+
+.formHolder .helper small
+{
+	font-size:105%;
+}
+
+.formHolder li.highlighted .helper
+{
+	visibility:visible;
+}
+
+.formHolder li:hover .helper
+{
+	visibility:visible;
+}
+
+
+
+/* Left or right label
+  ---------------------------------------------------------------------*/
+
+.leftLabel li, .rightLabel li
+{
+    width: 74% !important;
+    padding-top: 9px;
+}
+.leftLabel label.description, .rightLabel label.description
+{
+    float: left;
+    width: 29%;
+    margin: 0px 15px 0 0;
+}
+.rightLabel label.description
+{
+    text-align: right;
+}
+.leftLabel li div.inputElements, .rightLabel li div.inputElements
+{
+    float: left;
+}
+.leftLabel .small, .rightLabel .small
+{
+    width: 50%;
+}
+.leftLabel .medium, .rightLabel .medium
+{
+    width: 100%;
+}
+.leftLabel li div.inputElements, .rightLabel li div.inputElements
+{
+	width:64%;
+}
+.leftLabel .large, .leftLabel textarea.textarea, .rightLabel .large, .rightLabel textarea.textarea
+{
+    width: 100%;
+}
+* html .leftLabel .large, * html .leftLabel textarea.textarea, * html .rightLabel .large, * html .rightLabel textarea.textarea
+{
+    width: 97%;
+}
+.leftLabel p.helper, .rightLabel p.helper
+{
+    width: 27%;
+    margin-left: 5px;
+}
+.leftLabel .buttons, .rightLabel .buttons
+{
+    margin-left: 15px;
+} 
+* html .leftLabel .buttons, * html .rightLabel .buttons
+{
+    margin-left: 4px;
+} 
+* + html .leftLabel .buttons, * + html .rightLabel .buttons
+{
+    margin-left: 7px;
+}
+.leftLabel .buttons .inputElements, .rightLabel .buttons .inputElements
+{
+    margin-left: 29%;
+} 
+* html .leftLabel .buttons .submit, * html .rightLabel .buttons .submit
+{
+    margin-left: 22%;
+}
+
+/* collapsible
+  ---------------------------------------------------------------------*/
+.collapsible
+{
+	background:#f3f3f3;
+	border:solid 1px #ccc;
+}
+
+.collapsible .inputElements
+{
+	display:none;
+}

@@ -1,0 +1,537 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VerticalPlatform.RapidApi</name>
+    </assembly>
+    <members>
+        <member name="T:VerticalPlatform.RapidApi.WebApiConfig">
+            <summary>
+              Web API configuration and services
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+              register
+            </summary>
+            <param name="config"></param>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.AutoMapperConfigurations.RapidApiAutoMapperConfigurations">
+            <summary>
+              Auto mapper configurations for rapid api
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.AutoMapperConfigurations.RapidApiAutoMapperConfigurations.InitializeAutoMapper">
+            <summary>
+              initializes automapper configurations
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Controllers.ApiControllerBase">
+            <summary>
+              Api Base Controller
+            </summary>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Controllers.V1.DummyController">
+            <summary>
+              Api Test endpoint
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.Controllers.V1.DummyController._rapidProductService">
+            <summary>
+            RapidProductService
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.DummyController.#ctor">
+            <summary>
+            initiates new TestController
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.DummyController.Get(System.Int32)">
+            <summary>
+              get test-model by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.DummyController.Get">
+            <summary>
+              Get all GetTestModels
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.DummyController.Post(VerticalPlatform.RapidApi.Models.DummyModel)">
+            <summary>
+              Insert New TestModel
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.DummyController.Put(System.Int32,VerticalPlatform.RapidApi.Models.DummyModel)">
+            <summary>
+              Updates test model
+            </summary>
+            <param name="id"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.DummyController.Delete(System.Int32)">
+            <summary>
+              Deletes Test model by id
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.DummyController.GetAllTestModelsAnonymous">
+            <summary>
+              Get all GetAllTestModelsAnonymous
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.DummyController.AddManyTestModels(System.Collections.Generic.List{VerticalPlatform.RapidApi.Models.DummyModel})">
+            <summary>
+              Custom Post
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.DummyController.Get(System.String)">
+            <summary>
+              Get all GetAllTestModelsAnonymous
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Controllers.V1.RapidProductController">
+            <summary>
+            Persist 
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidProductController.#ctor">
+            <summary>
+            RapidProductUpdateController
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidProductController.PushRapidProductUpdates(VerticalPlatform.Core.Data.Dto.RapidApi.RapidProductUpdatesRequestDto)">
+            <summary>
+            PushRapidProductUpdates
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidProductController.ProductionPushSyncConfirmation(VerticalPlatform.Core.Data.Dto.RapidApi.ProductionPushSyncConfirmationRequestDto)">
+            <summary>
+            UpdateRapidUpdateStatusForJob
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController">
+            <summary>
+              Rapid Job Endpoint
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController._rapidApiRapidJobService">
+            <summary>
+              RapidApiRapidJobService
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.#ctor">
+            <summary>
+              Creates new instance of <see cref="T:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController" />
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.GetQueuedRapidJobs">
+            <summary>
+              Gets queued rapid jobs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.GetQueuedRapidJobForProductionPush">
+            <summary>
+              Gets queued rapid tasks with the job 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.GetQueuedRapidJobForReporting">
+            <summary>
+              Gets queued rapid job with the tasks for reproting
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.UpdateRapidJobStatus(VerticalPlatform.Core.Data.Dto.RapidApi.RapidJobDto)">
+            <summary>
+            Updates Rapid job + Tasks status
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.UpdateRapidJob(VerticalPlatform.Core.Data.Dto.RapidApi.RapidJobDto)">
+            <summary>
+            Updates Rapid job + Tasks
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.GetQueuedRapidCleanUpJob">
+            <summary>
+              GetQueuedRapidCleanUpJob
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.UpdateRapidReportTask(VerticalPlatform.Core.Data.Dto.RapidApi.RapidTaskDto)">
+            <summary>
+            Update rapid report task, including the start and end times
+            </summary>
+            <param name="rapidTask"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.UpdateRapidCleanupJob(VerticalPlatform.Core.Data.Dto.RapidApi.RapidJobDto)">
+            <summary>
+            UpdateRapidCleanupJob
+            </summary>
+            <param name="rapidJob"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V1.RapidJobController.UpdateTaskStatus(VerticalPlatform.Core.Data.Dto.RapidApi.RapidTaskDto)">
+            <summary>
+            UpdateTaskStatus
+            </summary>
+            <param name="rapidTaskDtp"></param>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Controllers.V2.DummyController">
+            <summary>
+            TestController V2
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V2.DummyController.GetAllTestModelsAnonymous">
+            <summary>
+            Get all GetAllTestModelsAnonymous
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V2.DummyController.GetAllTestModels">
+            <summary>
+            Get all GetTestModels
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Controllers.V2.DummyController.GetTestModel(System.Int32)">
+            <summary>
+            get testmodel by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Emails.EmailInfo">
+            <summary>
+            Encapsuating info required for sending an email
+            </summary>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Emails.EmailSetting">
+            <summary>
+            Encapsulates the settings required for email functionality
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Emails.EmailSetting.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            constructor
+            </summary>
+            <param name="accessKey"></param>
+            <param name="secretKey"></param>
+            <param name="regionName"></param>
+            <param name="fromEmail"></param>
+            <param name="rapidAdminReportPageUrl"></param>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Emails.SESEmailService">
+            <summary>
+            SESEmailService
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Emails.SESEmailService.#ctor(VerticalPlatform.RapidApi.Emails.EmailSetting)">
+            <summary>
+            SESEmailService constructor
+            </summary>
+            <param name="emailSetting"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Emails.SESEmailService.Send(VerticalPlatform.RapidApi.Emails.EmailInfo)">
+            <summary>
+            Send email
+            </summary>
+            <param name="emailInfo"></param>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Filters.AuthenticationFilter">
+            <summary>
+              Custom Authentication Filter
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.Filters.AuthenticationFilter.AuthenticationScheme">
+            <summary>
+              _AUTHENTICATION_SCHEME
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.Filters.AuthenticationFilter.AllowedApps">
+            <summary>
+              allowed apps
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Filters.AuthenticationFilter.#ctor">
+            <summary>
+              Creates AuthenticationFilter new instance
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Filters.AuthenticationFilter.OnAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+              read requested header and validated
+            </summary>
+            <param name="actionContext"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Filters.AuthenticationFilter.SkipAuthorization(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+              AllowAnonymousAttribute handler
+            </summary>
+            <param name="actionContext"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Filters.CustomExceptionFilter">
+            <summary>
+              Custom Exception Filter
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Filters.CustomExceptionFilter.OnException(System.Web.Http.Filters.HttpActionExecutedContext)">
+            <summary>
+              On Exception handler
+            </summary>
+            <param name="actionExecutedContext"></param>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.WebApiApplication">
+            <summary>
+            Application global startup
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.WebApiApplication.Application_Start">
+            <summary>
+            Application Startup
+            </summary>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Helpers.CompressedContent">
+            <summary>
+              Compression handler
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.Helpers.CompressedContent._content">
+            <summary>
+              Http Content
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.Helpers.CompressedContent._encodingType">
+            <summary>
+              Encoding
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Helpers.CompressedContent.#ctor(System.Net.Http.HttpContent,System.String)">
+            <summary>
+              Instance
+            </summary>
+            <param name="content"></param>
+            <param name="encodingType"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Helpers.CompressedContent.TryComputeLength(System.Int64@)">
+            <summary>
+              TryComputeLength
+            </summary>
+            <param name="length"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Helpers.CompressedContent.SerializeToStreamAsync(System.IO.Stream,System.Net.TransportContext)">
+            <summary>
+              serialize
+            </summary>
+            <param name="stream"></param>
+            <param name="context"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Helpers.DecompressedContent">
+            <summary>
+              decompression handler
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Helpers.DecompressedContent.#ctor(System.Net.Http.HttpContent,System.IO.Stream)">
+            <summary>
+              Decompressed content
+            </summary>
+            <param name="content"></param>
+            <param name="stream"></param>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Handlers.CompressionHandler">
+            <summary>
+            WebApi Compression Handler
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.Handlers.CompressionHandler.GZip">
+            <summary>
+            GZip encoding
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.Handlers.CompressionHandler.Deflate">
+            <summary>
+            Deflate encoding
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Handlers.CompressionHandler.SendAsync(System.Net.Http.HttpRequestMessage,System.Threading.CancellationToken)">
+            <summary>
+            Handles Api method delegations
+            </summary>
+            <param name="request"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.Handlers.CompressionHandler.CheckCompressionHeaders(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            checks for compression headers
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.Models.DummyModel">
+            <summary>
+              API Test
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.RapidApi.Models.DummyModel.Id">
+            <summary>
+              Id
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.RapidApi.Models.DummyModel.Name">
+            <summary>
+              Name
+            </summary>
+        </member>
+        <member name="P:VerticalPlatform.RapidApi.Models.DummyModel.Price">
+            <summary>
+              Price
+            </summary>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.RapidServices.RapidApiProductService">
+            <summary>
+              Product Service
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.RapidServices.RapidApiProductService._productService">
+            <summary>
+              ProductService
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiProductService.#ctor">
+            <summary>
+              initiates new ProductService
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiProductService.GetProductById(System.Int32)">
+            <summary>
+              Get Product by id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidProductService">
+            <summary>
+              Rapid job related services
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidProductService._rapidService">
+            <summary>
+              RapidJobService
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidProductService.#ctor">
+            <summary>
+              Creates new instance of <see cref="T:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService" />
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidProductService.SaveRapidProductUpdates(VerticalPlatform.Core.Data.Dto.RapidApi.RapidProductUpdatesRequestDto)">
+            <summary>
+            SaveRapidProductUpdates
+            </summary>
+            <param name="rapidProductUpdatesRequestDto"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidProductService.SaveRapidProductUpdateJob(VerticalPlatform.Core.Data.Dto.RapidApi.ProductionPushSyncConfirmationRequestDto)">
+            <summary>
+            Update Status Of Synced Rapid Updates
+            </summary>
+            <param name="request"></param>
+        </member>
+        <member name="T:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService">
+            <summary>
+              Rapid job related services
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService._autoMapper">
+            <summary>
+              Automapper
+            </summary>
+        </member>
+        <member name="F:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService._rapidJobService">
+            <summary>
+              RapidJobService
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.#ctor">
+            <summary>
+              Creates new instance of <see cref="T:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService" />
+            </summary>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.GetQueuedRapidJobs">
+            <summary>
+              Gets queued rapid jobs
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.GetQueuedRapidJobForProductionPush">
+            <summary>
+            GetQueuedRapidJobForProductionPush
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.GetQueuedRapidJobForReporting">
+            <summary>
+            GetQueuedRapidJobForReporting
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.GetQueuedRapidCleanUpJob">
+            <summary>
+            Get Queued Rapid CleanUp Task
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.UpdateRapidJobTaskStatus(VerticalPlatform.Core.Data.Dto.RapidApi.RapidJobDto)">
+            <summary>
+              Updates Rapid Job with related tasks
+            </summary>
+            <param name="rapidJobDto"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.UpdateRapidJob(VerticalPlatform.Core.Data.Dto.RapidApi.RapidJobDto,VerticalPlatform.RapidApi.Emails.EmailSetting)">
+            <summary>
+            Updates Rapid Job with related tasks
+            </summary>
+            <param name="rapidJobDto"></param>
+            <param name="emailSettings"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.UpdateRapidReportTask(VerticalPlatform.Core.Data.Dto.RapidApi.RapidTaskDto)">
+            <summary>
+            Update rapid report task, including the start and end times
+            </summary>
+            <param name="rapidTaskDto"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.UpdateRapidCleanupJob(VerticalPlatform.Core.Data.Dto.RapidApi.RapidJobDto)">
+            <summary>
+            UpdateRapidCleanupJob
+            </summary>
+            <param name="rapidJobDto"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.UpdateTaskStatus(VerticalPlatform.Core.Data.Dto.RapidApi.RapidTaskDto)">
+            <summary>
+            UpdateTaskStatus
+            </summary>
+            <param name="rapidTaskDtp"></param>
+        </member>
+        <member name="M:VerticalPlatform.RapidApi.RapidServices.RapidApiRapidJobService.GetSortOrderForRapidTaskType(VerticalPlatform.Core.Data.Dto.RapidApi.RapidTaskDto)">
+            <summary>
+            Get Zero based sort order for Rapid Task type
+            </summary>
+            <param name="rapidTask"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

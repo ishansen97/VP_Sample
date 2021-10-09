@@ -1,0 +1,556 @@
+﻿body
+{
+	font-family: Verdana;
+}
+
+
+.wym_tools_link a
+{
+	background-image: url(./Images/ArticleEditor/link.gif);
+}
+
+.wym_tools_remove_align a
+{
+	background-image: url(./Images/ArticleEditor/remove.jpg) !important;
+	background-position: center center !important;
+}
+
+.wym_tools_right_align a
+{
+	background-image: url(./Images/ArticleEditor/right.png) !important;
+	background-position: center center !important;
+}
+
+.wym_tools_left_align a
+{
+	background-image: url(./Images/ArticleEditor/left.png) !important;
+	background-position: center center !important;
+}
+
+.wym_tools_flash a
+{
+	background-image: url(./Images/ArticleEditor/flash.gif) !important;
+	background-position: center center !important;
+}
+.wym_tools_video a
+{
+	background-image: url(./Images/ArticleEditor/Video.gif) !important;
+	background-position: center center !important;
+}
+.wym_tools_embeded a
+{
+	background-image: url(./Images/ArticleEditor/embad.jpg) !important;
+	background-position: center center !important;
+}
+
+.wym_tools_image a
+{
+	background-image: url(./Images/ArticleEditor/image.gif) !important;
+	background-position: center center !important;
+}
+
+.wym_tools_tags a
+{
+	background-image: url(./Images/ArticleEditor/tag.png) !important;
+	background-position: center center !important;
+}
+
+.wym_tools_save a
+{
+	background-image: url(./Images/ArticleEditor/image.gif) !important;
+	background-position: center center !important;
+}
+
+#ResourcePropertyDialog
+{
+	border: double 2px black;
+}
+
+#ResourcePropertyDialog ul li
+{
+	list-style-type: none;
+}
+
+.PluginPropertyDialogTemplates
+{
+	display: none;
+}
+
+#PluginPropertyDialogErrors li
+{
+	color: #ff0000;
+}
+
+.invalidField
+{
+	background-color: #FF9999;
+}
+
+#articleTree li[rel=page] > a ins
+{
+	background-image: url(Images/ArticleEditor/page.jpg);
+}
+
+#articleTree li[rel=resource] > a ins
+{
+	background-image: url(Images/ArticleEditor/prev.png);
+}
+
+#articleTree li[rel=section] > a ins
+{
+	background-image: url(Images/ArticleEditor/section.jpg);
+}
+
+#ArticleEditor
+{
+	/*border-style: double; 	border-width: medium; 	border-color: inherit;*/
+	width: auto;
+	height: auto;
+	overflow: hidden;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background: #FFFFFF none repeat scroll 0 0;
+	border: 1px solid #DDDDDD;
+}
+
+
+
+.ArticleSectionEdit
+{
+	float: right;
+	width: 58%;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.SectionSaveButtonPanel
+{
+	float: right;
+	width: 100%;
+}
+
+.SectionEditPane
+{
+	float: right;
+	width: 58%;
+}
+
+.ArticleSectionEdit ul li
+{
+	list-style-type: none;
+}
+
+.ArticleSectionEdit ul li input
+{
+	right: 2px;
+}
+
+.ArticleSectionList
+{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	padding-right: 1%;
+	padding-left: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+.ArticleSectionList li
+{
+	list-style-type: none;
+	border: thin outset #C0C0C0;
+	clear: both;
+	height: 22px;
+	background-color: #C0C0C0;
+}
+
+.ArticleSectionList li.Selected
+{
+	list-style-type: none;
+	border: thin inset #C0C0C0;
+	clear: both;
+	height: 22px;
+	background-color: #999966;
+}
+
+.AddSection
+{
+	padding-left: 150px;
+}
+
+.SectionProperties
+{
+	display: none;
+}
+
+.SectionButtonPanel
+{
+	display: none;
+}
+
+.SectionTypeList
+{
+	width: 100px;
+}
+
+.ArticleSectionList li span.SectionTitle
+{
+	margin-left: 2px;
+	width: 90%;
+}
+
+.ArticleSectionList .Menu
+{
+	width: 10%;
+}
+
+.ArticleSectionList .PrevPage
+{
+	background-image: url(Images/ArticleEditor/prev1.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	font-weight: bold;
+	width: 16px;
+	display: inline-block;
+}
+
+.ArticleSectionList .NextPage
+{
+	background-image: url(Images/ArticleEditor/next1.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 16px;
+	display: inline-block;
+}
+
+.ArticleSectionList .SectionHandleSortable
+{
+	background-image: url(./Images/ArticleEditor/draghandle.gif);
+	background-color: Gray;
+	width: 10px;
+	height: 20px;
+	display: block;
+	float: left;
+}
+
+.ArticleSectionList .SectionHandleUnSortable
+{
+	background-image: url(./Images/ArticleEditor/draghandle.gif);
+	background-color: Gray;
+	width: 10px;
+	height: 20px;
+	display: block;
+	float: left;
+}
+
+.SectionEditorTemplates
+{
+	display: none;
+}
+
+.TemplateSettings
+{
+	display: none;
+}
+
+a.SectionTitleLink
+{
+	text-decoration: none;
+	color: White;
+}
+
+a.SectionTitleLink:hover
+{
+	color: Gray;
+}
+
+
+.ArticlePageList
+{
+	list-style: none;
+}
+
+.ArticlePageList li
+{
+	display: inline; /*background-color: #C0C0C0;*/
+	margin: 2px;
+	padding: 2px;
+}
+
+.ArticlePageList li.CurrentPage
+{
+	background-color: #87F7FF;
+}
+
+
+.ArticleEditorStatusPane
+{
+	clear: both;
+}
+
+.EditorErrors
+{
+	color: Red;
+}
+
+.sectionLable
+{
+	width: 150px;
+}
+
+.txtEmbededCode
+{
+	height: 113px;
+	width: 380px;
+}
+
+a.clicked
+{
+	background-color: #add8e6;
+}
+
+.tree a:hover
+{
+	background-color: #b0e0e6;
+}
+
+.ArticleEditPane .TreeStructure
+{
+	width: 25%;
+	float: left;
+	border: 2;
+	border-color: Silver;
+}
+
+.ArticleEditPane .ArticleEditButtons
+{
+	width: 100%; /*background-color:#ECE9D8;*/
+	padding-bottom: 0;
+	padding-top: 0;
+	vertical-align: middle;
+}
+
+.ArticleEditPane .ArticleEditButtons
+{
+	margin: 0px 5px 0px 5px;
+}
+
+.ArticleEditPane .ArticleEditButtons img
+{
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	padding: 2px;
+	border: solid 1px #ffffff;
+}
+
+.ArticleEditPane .ArticleEditButtons img:hover
+{
+	border: solid 1px #dddddd;
+	background: #eeeeee;
+}
+
+.ArticleEditPane .ArticleEditButtons
+{
+	cursor: pointer;
+	padding: 2px;
+	border: solid 1px #ffffff;
+}
+
+
+.ArticleEditPane .ArticleEditButtons ul
+{
+	padding: 0px;
+	margin: 2px;
+}
+
+.ArticleEditPane .ArticleEditButtons ul li
+{
+	padding: 3px;
+	width: 16px;
+	float: left;
+	display: inline;
+}
+
+.ArticleEditPane .ArticleEditButtonFooter
+{
+	width: 100%;
+	float: left;
+}
+
+.ArticleEditPane .Seperater
+{
+	width: 3px;
+	background-color: Black;
+}
+
+.ArticleEditPane .TreeStructure .SectionTree
+{
+	float: left;
+	width: 100%;
+}
+
+.ArticleEditPane .ContentEditPane
+{
+	float: right;
+	width: 70%;
+	border-style: solid;
+	border-color: Silver;
+	border-width: 2px;
+	background-color: White;
+	background-color: #ECE9D8;
+	border: 1px solid Silver;
+	float: right;
+	padding: 5px;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit
+{
+	width: 100%;
+	margin: 1px;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit ul li
+{
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	margin-bottom:5px;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit ul li.ui-state-default
+{
+	margin-bottom:-1px;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit ul li:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+* html .ArticleEditPane .ContentEditPane .ArticleContentEdit ul li             { zoom: 1; } /* IE6 */
+*:first-child+html .ArticleEditPane .ContentEditPane .ArticleContentEdit ul li { zoom: 1; } /* IE7 */
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit .PropertyInput
+{
+	display: block;
+	width: 100%;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit label
+{
+	display: inline-block;
+	width: 11em;
+	text-align: left;
+	float:left;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit input
+{
+	float:left;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit .ui-tabs-panel input
+{
+	float:none;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit input[type='button']
+	{border:solid 1px #b4b4b4;
+	 color:#2a2a2a;
+	 height:20px;
+	 font-size:10px;
+	 background:#c0c0c0 url(images/common_button_bg.png) repeat-x;
+	 text-shadow: 1px 1px 0px #efefef;
+	 font-weight:bold;
+	 font-family:Verdana, Arial, Helvetica, sans-serif;
+	 cursor:pointer; 
+	 height:24px;
+	 float:none;
+	 }
+
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit select
+{
+	float:left;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit textarea
+{
+	float:left;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit input.common_text_button
+{
+	float:none;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit .RestrictedItems
+{
+	width: 500px;
+	font-weight: bold;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit .ContentMessage
+{
+	text-align: center;
+}
+
+.SectionSaveButtonPanel
+{
+	padding-top: 10px;
+}
+
+.PluginPropertyDialog
+{
+	width: 600px;
+	height: 300px;
+}
+
+.PluginPropertyDialog .PluginPropertyDialogPane ul
+{
+	padding:0px;
+	margin:0px;
+}
+
+.PluginPropertyDialog .PluginPropertyDialogPane ul li
+{
+	list-style-type: none;
+	padding: 2px;
+	margin: 0;
+}
+
+.PluginPropertyDialog .PluginPropertyDialogPane ul.float_ul li
+{
+	float:left;
+}
+
+.PluginPropertyDialog .PluginPropertyDialogPane label
+{
+	display: inline-block;
+	width: 11em;
+	text-align: left;
+}
+
+.ArticleEditPane .ContentEditPane .ArticleContentEdit input.TagPicker
+{
+	background:#ffffff url(Images/ArticleEditor/tag.png) no-repeat 0px 0px;
+	width: 28px;
+	height: 23px;
+	display: inline-block;
+	margin: 2px 3px 0px 3px;
+	float:left;
+}
+
+.plugin_property_contents
+{
+	position:relative;
+}
+
+.PluginPropertyDialogPane h2{position:absolute; top:100px; text-transform:capitalize; color:#000000;float:left;font-size:14px;margin:0;padding:5px 0 5px 0px; font-weight:bold; text-shadow:1px 1px 0 #EFEFEF; max-width:600px; margin-right:35px;line-height:25px}
+
+
+.wym_tools_iteration a{ background:url(Images/ArticleEditor/for-loop.png) no-repeat 2px 4px !important; cursor:pointer;}
+.wym_tools_collection a{ background:url(Images/ArticleEditor/collection.png) no-repeat 2px 4px !important; cursor:pointer;}
+.wym_tools_iteration a:hover, .wym_tools_collection a:hover{ background-color:yellow !important;}
